@@ -3732,7 +3732,7 @@ html.fs-lg {
   isolation: isolate;
   padding: 64px 0 0;
   background-color: var(--bg-page);
-  background-image: url("../assets/img/home/home-hero.jpg");
+  background-image: url("../assets/img/home/home-hero.webp");
   background-position: center 35%;
   background-repeat: no-repeat;
   background-size: cover;

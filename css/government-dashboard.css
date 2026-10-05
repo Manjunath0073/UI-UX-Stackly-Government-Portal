@@ -3016,3 +3016,41 @@ pre {
 .tracking__grid .tcard__foot {
   margin-top: 0;
 }
+
+/* ===== DASHBOARD BRAND (navbar logo) ===== */
+.dash__brand {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.dash__brand-logo {
+  display: block;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.dash__brand-logo img {
+  display: block;
+  width: 148px;
+  height: auto;
+  filter: brightness(0);
+}
+
+.dash__brand-logo.is-official {
+  position: static;
+  background: transparent;
+  overflow: visible;
+}
+
+.dash__brand-logo.is-official::before {
+  display: none;
+}
+
+.dash__brand.is-official .dash__brand-logo img,
+.dash__brand-logo.is-official img {
+  filter: brightness(0);
+}

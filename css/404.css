@@ -1427,7 +1427,13 @@ html.fs-lg {
 
 /* ===== 404 — HERO ===== */
 .err {
-  background: var(--err-bg);
+  background-color: var(--err-bg);
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, .86) 0%, rgba(255, 255, 255, .80) 45%, rgba(255, 255, 255, .92) 100%),
+    url("../assets/img/home/home-hero.webp");
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 72px 0 80px;
 }
 

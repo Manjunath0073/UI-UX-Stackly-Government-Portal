@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Access government services, schemes and local services from your State or Union Territory through Stackly's unified sub-national digital gateway.">
+  <title>Stackly | State &amp; Union Territory Services</title>
+  <link rel="stylesheet" href="css/state-portal.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="utility-bar">
+      <div class="header-container utility-content">
+        <div class="utility-primary">
+          <div class="utility-identity">
+            <span class="utility-status-dot" aria-hidden="true"></span>
+            <span class="utility-stack"><span lang="hi">भारत सरकार</span><span>Government of India</span></span>
+          </div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <div class="utility-detail"><span>Ministry of Electronics &amp;</span><span>Information Technology (MeitY)</span></div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <div class="utility-detail"><span>Digital India</span><span>Initiative</span></div>
+        </div>
+
+        <div class="utility-right">
+          <div class="font-size-control" role="group" aria-label="Text size">
+            <button type="button" data-font-size="sm" aria-label="Decrease text size">A-</button>
+            <button type="button" data-font-size="md" aria-label="Reset text size">A</button>
+            <button type="button" data-font-size="lg" aria-label="Increase text size">A+</button>
+          </div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <button class="utility-tool" type="button" aria-label="Increase contrast">
+            <svg class="utility-icon contrast-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16Z" fill="currentColor" stroke="none" /><path d="M12 4a8 8 0 0 1 0 16Z" fill="var(--navy-900)" stroke="none" /></svg>
+            <span>Contrast</span>
+          </button>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <button class="utility-tool utility-screen-reader" type="button" aria-label="Screen reader support">
+            <svg class="utility-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.5" /><path d="M5 9h14M12 9v10M8.5 20l3.5-6 3.5 6" /></svg>
+            <span>Screen<br>Reader</span>
+          </button>
+          <div class="language-control">
+            <button class="language-selector" id="language-selector" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-menu">
+              <svg class="utility-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h11M9.5 5v2M6 5c.8 3.4 2.5 5.8 5.1 7.4M6.5 10.5c2.3-.9 4.3-2.5 5.8-4.7" /><circle cx="16.5" cy="15.5" r="4.5" /><path d="M12 15.5h9M16.5 11c1.2 1.3 1.8 2.8 1.8 4.5s-.6 3.2-1.8 4.5c-1.2-1.3-1.8-2.8-1.8-4.5s.6-3.2 1.8-4.5Z" /></svg>
+              <span class="language-copy"><span>Language: English</span><span lang="hi">(हिन्दी)</span></span>
+              <svg class="language-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+            </button>
+            <div class="language-menu" id="language-menu" role="listbox" aria-label="Choose language" hidden>
+              <button type="button" role="option" aria-selected="true" data-language="English">English</button>
+              <button type="button" role="option" aria-selected="false" data-language="Hindi">हिन्दी</button>
+              <button type="button" role="option" aria-selected="false" data-language="Tamil">தமிழ்</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-bar">
+      <div class="header-container main-bar-inner">
+        <a class="header-brand" href="index.html" aria-label="Stackly home">
+          <img class="header-brand-logo" src="assets/logo/logo-stackly.webp" alt="Stackly" width="150" height="36">
+        </a>
+        <form class="site-search" role="search" action="#top">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+          <label class="sr-only" for="site-header-search">Search citizen services</label>
+          <input id="site-header-search" type="search" placeholder="Search 36 States &amp; UT portals, licenses, welfare schemes..." autocomplete="off">
+        </form>
+        <a class="btn-login" href="login.html">
+          <svg class="login-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg>
+          <span>MeriPehchaan Login</span>
+        </a>
+        <button class="header-menu-toggle" type="button" aria-label="Open primary navigation" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <div class="header-container primary-nav-inner">
+        <button class="header-drawer-close" type="button" aria-label="Close primary navigation" data-header-close>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+          <span>Menu</span>
+        </button>
+        <a class="nav-item" href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m4 11 8-7 8 7M6.5 9.5V20h11V9.5M10 20v-5h4v5" /></svg><span>Home</span></a>
+        <a class="nav-item" href="services.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1" /><rect x="14" y="4" width="6" height="6" rx="1" /><rect x="4" y="14" width="6" height="6" rx="1" /><rect x="14" y="14" width="6" height="6" rx="1" /></svg><span>All Services</span></a>
+        <a class="nav-item" href="ministries.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-5h6v5M9 10h.01M15 10h.01" /></svg><span>Ministries</span></a>
+        <a class="nav-item is-active" href="state-portal.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5zM8 8h8M8 12h5M8 16h3" /></svg><span>State Portals</span></a>
+        <a class="nav-item" href="digilocker.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1" /></svg><span>DigiLocker</span></a>
+        <a class="nav-item" href="grievance.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><path d="M4.5 19c.6-3.2 2.1-5 4.5-5s3.9 1.8 4.5 5M15 10a4 4 0 0 1 4 4v2M18 10h1.5A2.5 2.5 0 0 1 22 14.5V16h-3" /></svg><span>Grievance (CPGRAMS)</span></a>
+        <a class="nav-item" href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h17M8 16v-4M12 16V8M16 16v-6M20 16v-9" /></svg><span>Dashboard</span></a>
+        <a class="drawer-login" href="login.html">MeriPehchaan Login</a>
+      </div>
+    </nav>
+    <div class="header-drawer-backdrop" data-header-close hidden></div>
+  </header>
+
+  <main id="main-content">
+    <section class="st-hero" id="top" aria-labelledby="st-hero-title">
+      <div class="container">
+        <div class="st-hero__grid">
+          <div class="st-hero__content">
+            <span class="st-hero__badge"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2" /><circle cx="18" cy="6" r="2" /><circle cx="12" cy="18" r="2" /><path d="M6 8v6a4 4 0 0 0 4 4h4M18 8v2a4 4 0 0 1-4 4h-4" /></svg>36 States &amp; Union Territories Digital Infrastructure</span>
+            <h1 id="st-hero-title" class="st-hero__title">State &amp; Union Territory Services</h1>
+            <p class="st-hero__sub">Access government services, schemes and local services from your
+               State or Union Territory.</p>
+
+            <div class="st-hero__panel">
+              <div class="st-hero__fields">
+                <div class="st-field">
+                  <label for="st-select-state">SELECT YOUR STATE / UT</label>
+                  <div class="st-select">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10Z" /><circle cx="12" cy="11" r="2.2" /></svg>
+                    <select id="st-select-state">
+                      <option>Choose State / Union Territory...</option>
+                      <option value="Andhra Pradesh">Andhra Pradesh</option>
+                      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                      <option value="Assam">Assam</option>
+                      <option value="Bihar">Bihar</option>
+                      <option value="Chhattisgarh">Chhattisgarh</option>
+                      <option value="Goa">Goa</option>
+                      <option value="Gujarat">Gujarat</option>
+                      <option value="Haryana">Haryana</option>
+                      <option value="Himachal Pradesh">Himachal Pradesh</option>
+                      <option value="Jharkhand">Jharkhand</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="Madhya Pradesh">Madhya Pradesh</option>
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Manipur">Manipur</option>
+                      <option value="Meghalaya">Meghalaya</option>
+                      <option value="Mizoram">Mizoram</option>
+                      <option value="Nagaland">Nagaland</option>
+                      <option value="Odisha">Odisha</option>
+                      <option value="Punjab">Punjab</option>
+                      <option value="Rajasthan">Rajasthan</option>
+                      <option value="Sikkim">Sikkim</option>
+                      <option value="Tamil Nadu">Tamil Nadu</option>
+                      <option value="Telangana">Telangana</option>
+                      <option value="Tripura">Tripura</option>
+                      <option value="Uttar Pradesh">Uttar Pradesh</option>
+                      <option value="Uttarakhand">Uttarakhand</option>
+                      <option value="West Bengal">West Bengal</option>
+                      <option value="Andaman &amp; Nicobar Islands">Andaman &amp; Nicobar Islands</option>
+                      <option value="Chandigarh">Chandigarh</option>
+                      <option value="Dadra &amp; Nagar Haveli and Daman &amp; Diu">Dadra &amp; Nagar Haveli and Daman &amp; Diu</option>
+                      <option value="Jammu &amp; Kashmir">Jammu &amp; Kashmir</option>
+                      <option value="Ladakh">Ladakh</option>
+                      <option value="Lakshadweep">Lakshadweep</option>
+                      <option value="NCT of Delhi">NCT of Delhi</option>
+                      <option value="Puducherry">Puducherry</option>
+                    </select>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+                  </div>
+                </div>
+                <div class="st-field">
+                  <label for="st-search-services">SEARCH STATE SERVICES</label>
+                  <div class="st-search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+                    <input id="st-search-services" type="search" placeholder="Search state services..." autocomplete="off">
+                    <button onclick="window.location.href='404.html'; return false;" class="btn-search" type="button">Search</button>
+                  </div>
+                </div>
+              </div>
+              <div class="st-hero__popular">
+                <span class="st-popular__label">Popular:</span>
+                <button class="st-chip" type="button">e-District</button>
+                <button class="st-chip" type="button">Land Records 7/12</button>
+                <button class="st-chip" type="button">Domicile</button>
+                <button class="st-chip" type="button">Encumbrance Certificate</button>
+                <button class="st-chip" type="button">Patta Chitta</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="st-hero__media">
+            <!-- TODO: swap with final compressed webp -->
+            <img src="assets/img/state-portal/hero.png"
+                 alt="State and Union Territory services unified citizen gateways banner"
+                 width="900" height="620">
+          </div>
+        </div>
+
+        <hr class="st-hero__divider">
+
+        <div class="st-hero__stats">
+          <div class="st-stat"><span class="st-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10Z" /><circle cx="12" cy="11" r="2.2" /></svg></span><div><span class="st-stat__value">28</span><span class="st-stat__label">States</span></div></div>
+          <div class="st-stat"><span class="st-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21h16M6 21V8l6-4 6 4v13M9 21v-5h6v5M9 10h.01M12 10h.01M15 10h.01" /></svg></span><div><span class="st-stat__value">8</span><span class="st-stat__label">Union Territories</span></div></div>
+          <div class="st-stat"><span class="st-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1" /><rect x="14" y="4" width="6" height="6" rx="1" /><rect x="4" y="14" width="6" height="6" rx="1" /><rect x="14" y="14" width="6" height="6" rx="1" /></svg></span><div><span class="st-stat__value">14,820+</span><span class="st-stat__label">Sub-National Services</span></div></div>
+          <div class="st-stat"><span class="st-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h6M8 16h5" /></svg></span><div><span class="st-stat__value">48.2M</span><span class="st-stat__label">Monthly Transactions</span></div></div>
+          <div class="st-stat"><span class="st-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" /><path d="m6 12 4 4 8-8" /></svg></span><div><span class="st-stat__value">99.94%</span><span class="st-stat__label">API Gateway Uptime</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sgrid" aria-labelledby="sgrid-title">
+      <div class="container">
+        <header class="sgrid__head">
+          <div>
+            <h2 id="sgrid-title" class="sgrid__title">States e-Governance Portals</h2>
+            <p class="sgrid__sub">Federated state switchboards delivering integrated public services
+               with single-sign-on capability.</p>
+          </div>
+          <span class="sgrid__pill"><i aria-hidden="true"></i> All 28 States Connected</span>
+        </header>
+
+        <div class="sgrid__grid">
+          <article class="scard">
+            <div class="scard__top">
+              <span class="scard__zone">South Zone</span>
+              <span class="scard__active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>Active</span>
+            </div>
+            <h3 class="scard__name">Tamil Nadu</h3>
+            <p class="scard__portal">TNeGA TN e-Sevai</p>
+            <div class="scard__services">
+              <span class="label">Services Integrated</span>
+              <span class="value">296 Services</span>
+            </div>
+            <span class="scard__flag-label">KEY FLAGSHIP SERVICES</span>
+            <p class="scard__flag-text">Mudhalvar Ungal Thoguthi, Patta Chitta, Community Certificate</p>
+            <hr class="scard__divider">
+            <a class="btn-launch" href="404.html">Launch Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="scard">
+            <div class="scard__top">
+              <span class="scard__zone">South Zone</span>
+              <span class="scard__active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>Active</span>
+            </div>
+            <h3 class="scard__name">Karnataka</h3>
+            <p class="scard__portal">Seva Sindhu</p>
+            <div class="scard__services">
+              <span class="label">Services Integrated</span>
+              <span class="value">510 Services</span>
+            </div>
+            <span class="scard__flag-label">KEY FLAGSHIP SERVICES</span>
+            <p class="scard__flag-text">Gruha Lakshmi, Bhoomi RTC, Janaspandana Grievance</p>
+            <hr class="scard__divider">
+            <a class="btn-launch" href="404.html">Launch Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="scard">
+            <div class="scard__top">
+              <span class="scard__zone">West Zone</span>
+              <span class="scard__active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>Active</span>
+            </div>
+            <h3 class="scard__name">Maharashtra</h3>
+            <p class="scard__portal">Aaple Sarkar</p>
+            <div class="scard__services">
+              <span class="label">Services Integrated</span>
+              <span class="value">1,120 Services</span>
+            </div>
+            <span class="scard__flag-label">KEY FLAGSHIP SERVICES</span>
+            <p class="scard__flag-text">MahaDBT, 7/12 Extract, Revenue &amp; Domicile</p>
+            <hr class="scard__divider">
+            <a class="btn-launch" href="404.html">Launch Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="scard">
+            <div class="scard__top">
+              <span class="scard__zone">North Zone</span>
+              <span class="scard__active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>Active</span>
+            </div>
+            <h3 class="scard__name">Uttar Pradesh</h3>
+            <p class="scard__portal">eSathi UP</p>
+            <div class="scard__services">
+              <span class="label">Services Integrated</span>
+              <span class="value">820 Services</span>
+            </div>
+            <span class="scard__flag-label">KEY FLAGSHIP SERVICES</span>
+            <p class="scard__flag-text">Khasra Khatauni, Caste/Income Verification, IGRS</p>
+            <hr class="scard__divider">
+            <a class="btn-launch" href="404.html">Launch Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="scard">
+            <div class="scard__top">
+              <span class="scard__zone">West Zone</span>
+              <span class="scard__active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>Active</span>
+            </div>
+            <h3 class="scard__name">Gujarat</h3>
+            <p class="scard__portal">Digital Gujarat</p>
+            <div class="scard__services">
+              <span class="label">Services Integrated</span>
+              <span class="value">440 Services</span>
+            </div>
+            <span class="scard__flag-label">KEY FLAGSHIP SERVICES</span>
+            <p class="scard__flag-text">AnyRoR Land Records, Widow Pension, Student Scholarships</p>
+            <hr class="scard__divider">
+            <a class="btn-launch" href="404.html">Launch Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="scard">
+            <div class="scard__top">
+              <span class="scard__zone">East Zone</span>
+              <span class="scard__active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>Active</span>
+            </div>
+            <h3 class="scard__name">West Bengal</h3>
+            <p class="scard__portal">Duare Sarkar</p>
+            <div class="scard__services">
+              <span class="label">Services Integrated</span>
+              <span class="value">690 Services</span>
+            </div>
+            <span class="scard__flag-label">KEY FLAGSHIP SERVICES</span>
+            <p class="scard__flag-text">Lakshmir Bhandar, Swasthya Sathi, Student Credit Cards</p>
+            <hr class="scard__divider">
+            <a class="btn-launch" href="404.html">Launch Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="scard">
+            <div class="scard__top">
+              <span class="scard__zone">South Zone</span>
+              <span class="scard__active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>Active</span>
+            </div>
+            <h3 class="scard__name">Kerala</h3>
+            <p class="scard__portal">e-District Kerala</p>
+            <div class="scard__services">
+              <span class="label">Services Integrated</span>
+              <span class="value">380 Services</span>
+            </div>
+            <span class="scard__flag-label">KEY FLAGSHIP SERVICES</span>
+            <p class="scard__flag-text">Akshaya Centres, Revenue certificates, Social Security</p>
+            <hr class="scard__divider">
+            <a class="btn-launch" href="404.html">Launch Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="scard">
+            <div class="scard__top">
+              <span class="scard__zone">North Zone</span>
+              <span class="scard__active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>Active</span>
+            </div>
+            <h3 class="scard__name">Rajasthan</h3>
+            <p class="scard__portal">Jan Soochna / e-Mitra</p>
+            <div class="scard__services">
+              <span class="label">Services Integrated</span>
+              <span class="value">750 Services</span>
+            </div>
+            <span class="scard__flag-label">KEY FLAGSHIP SERVICES</span>
+            <p class="scard__flag-text">Jan Aadhaar, Chiranjeevi, Bhamashah</p>
+            <hr class="scard__divider">
+            <a class="btn-launch" href="404.html">Launch Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ut" aria-labelledby="ut-title">
+      <div class="container">
+        <header class="ut__head">
+          <span class="ut__eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="16" rx="1" /><rect x="14" y="4" width="6" height="16" rx="1" /></svg>Sub-National Federal Administration</span>
+          <h2 id="ut-title" class="ut__title">Union Territories Dedicated Gateways</h2>
+          <p class="ut__sub">Central administration gateways delivering faceless municipal, revenue
+             and police services.</p>
+        </header>
+
+        <div class="ut__grid">
+          <article class="ut-card">
+            <div class="ut-card__top">
+              <span class="ut-card__code">UT 01 &bull; NCR</span>
+              <span class="ut-card__badge">350+ Services</span>
+            </div>
+            <h3 class="ut-card__title">Delhi (NCT)</h3>
+            <p class="ut-card__portal">Doorstep Delivery 1076 &amp; e-District Delhi</p>
+            <p class="ut-card__desc">Home-assisted biometric capture, revenue certificates, transport driving licences and water connections.</p>
+            <a class="btn-ut" href="404.html">Access Delhi Gateway <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="ut-card">
+            <div class="ut-card__top">
+              <span class="ut-card__code">UT 02 &bull; COASTAL</span>
+              <span class="ut-card__badge">120+ Services</span>
+            </div>
+            <h3 class="ut-card__title">Puducherry</h3>
+            <p class="ut-card__portal">e-Puratchi &amp; Puducherry e-District</p>
+            <p class="ut-card__desc">Direct citizen revenue issuance, social security pensions, utility billings and municipal authorizations.</p>
+            <a class="btn-ut" href="404.html">Access Puducherry Gateway <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="ut-card">
+            <div class="ut-card__top">
+              <span class="ut-card__code">UT 03 &bull; CITY SUB-HUB</span>
+              <span class="ut-card__badge">180+ Services</span>
+            </div>
+            <h3 class="ut-card__title">Chandigarh</h3>
+            <p class="ut-card__portal">e-Sampark Unified Citizen Services</p>
+            <p class="ut-card__desc">Single-desk physical and online civic access for electricity, estate office NOCs, and police verifications.</p>
+            <a class="btn-ut" href="404.html">Access e-Sampark <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="ut-card">
+            <div class="ut-card__top">
+              <span class="ut-card__code">UT 04 &bull; NORTHERN ZONE</span>
+              <span class="ut-card__badge">1,000+ Services</span>
+            </div>
+            <h3 class="ut-card__title">Jammu &amp; Kashmir</h3>
+            <p class="ut-card__portal">e-UNNAT &amp; JK Jan Sugam</p>
+            <p class="ut-card__desc">Comprehensive digital empowerment, Domicile certificate, land passbook digital records and DBT monitoring.</p>
+            <a class="btn-ut" href="404.html">Access e-UNNAT <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="ut-card">
+            <div class="ut-card__top">
+              <span class="ut-card__code">UT 05 &bull; HIGH ALTITUDE</span>
+              <span class="ut-card__badge">95+ Services</span>
+            </div>
+            <h3 class="ut-card__title">Ladakh</h3>
+            <p class="ut-card__portal">Ladakh e-District &amp; LAHDC Council</p>
+            <p class="ut-card__desc">Hill development council allocations, resident certificates, nomadic winter welfare distributions.</p>
+            <a class="btn-ut" href="404.html">Access Ladakh Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="ut-card">
+            <div class="ut-card__top">
+              <span class="ut-card__code">UT 06 &bull; ISLAND TERRITORY</span>
+              <span class="ut-card__badge">80+ Services</span>
+            </div>
+            <h3 class="ut-card__title">Lakshadweep</h3>
+            <p class="ut-card__portal">Lakshadweep Citizen Portal &amp; e-Panchayat</p>
+            <p class="ut-card__desc">Inter-island vessel permits, maritime livelihood subsidies, island welfare schemes and ration quota delivery.</p>
+            <a class="btn-ut" href="404.html">Access Lakshadweep Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="ut-card">
+            <div class="ut-card__top">
+              <span class="ut-card__code">UT 07 &bull; ISLAND TERRITORY</span>
+              <span class="ut-card__badge">115+ Services</span>
+            </div>
+            <h3 class="ut-card__title">Andaman &amp; Nicobar</h3>
+            <p class="ut-card__portal">A&amp;N Administration e-Services</p>
+            <p class="ut-card__desc">Port Blair municipal clearances, tribal passes, ferry ticketing integration and revenue certificates.</p>
+            <a class="btn-ut" href="404.html">Access A&amp;N Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="ut-card">
+            <div class="ut-card__top">
+              <span class="ut-card__code">UT 08 &bull; WESTERN UT</span>
+              <span class="ut-card__badge">130+ Services</span>
+            </div>
+            <h3 class="ut-card__title">DNH &amp; DD</h3>
+            <p class="ut-card__portal">DNH &amp; DD e-District Portal</p>
+            <p class="ut-card__desc">Industrial single window, land mutation, coastal commerce permissions, domicile and disability pension.</p>
+            <a class="btn-ut" href="404.html">Access DNH &amp; DD Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pss" aria-labelledby="pss-title">
+      <div class="container">
+        <header class="pss__head">
+          <div>
+            <h2 id="pss-title" class="pss__title">Popular State Services</h2>
+            <p class="pss__sub">High-frequency statutory certificates and local citizen entitlements
+               with prescribed Service Level Agreements (SLAs).</p>
+          </div>
+          <span class="pss__pill">Legal Enforceability: IT Act 2000</span>
+        </header>
+
+        <div class="pss__grid">
+          <article class="pss-card">
+            <div class="pss-card__top">
+              <span class="pss-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2" /><circle cx="12" cy="9" r="2.5" /><path d="M8.5 16c.6-1.5 1.9-2.2 3.5-2.2s2.9.7 3.5 2.2" /></svg></span>
+              <span class="pss-card__sla">SLA: 7 Days</span>
+            </div>
+            <h3 class="pss-card__title">Birth Certificate</h3>
+            <p class="pss-card__subtitle">Civil Registration System (CRS)</p>
+            <p class="pss-card__desc">Statutory vital birth registration, hospital link auto-notification, digital QR barcode issuance, and legal name inclusion.</p>
+            <hr class="pss-card__divider">
+            <div class="pss-card__foot">
+              <span class="pss-card__note">Available in all 36 States/UTs</span>
+              <a class="btn-pss" href="404.html">Apply Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+
+          <article class="pss-card">
+            <div class="pss-card__top">
+              <span class="pss-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h6M8 16h5" /></svg></span>
+              <span class="pss-card__sla">SLA: 5 Days</span>
+            </div>
+            <h3 class="pss-card__title">Income Certificate</h3>
+            <p class="pss-card__subtitle">Tehsildar Revenue Verification</p>
+            <p class="pss-card__desc">State revenue department verification of family annual income for scholarship schemes, fee concessions, and EWS eligibility.</p>
+            <hr class="pss-card__divider">
+            <div class="pss-card__foot">
+              <span class="pss-card__note">DigiLocker Linked</span>
+              <a class="btn-pss" href="404.html">Apply Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+
+          <article class="pss-card">
+            <div class="pss-card__top">
+              <span class="pss-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2" /><circle cx="17" cy="9" r="2.4" /><path d="M3.5 19c.5-3.2 2.3-5 5.5-5s5 1.8 5.5 5M13.5 14.5c2.9.3 4.6 1.6 5.2 3.7" /></svg></span>
+              <span class="pss-card__sla">SLA: 10 Days</span>
+            </div>
+            <h3 class="pss-card__title">Community / Caste Certificate</h3>
+            <p class="pss-card__subtitle">OBC / SC / ST Social Welfare</p>
+            <p class="pss-card__desc">Sub-Divisional Magistrate verification for educational reservations, civil service applications, and affirmative welfare benefits.</p>
+            <hr class="pss-card__divider">
+            <div class="pss-card__foot">
+              <span class="pss-card__note">Permanent Validity</span>
+              <a class="btn-pss" href="404.html">Apply Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+
+          <article class="pss-card">
+            <div class="pss-card__top">
+              <span class="pss-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10Z" /><circle cx="12" cy="11" r="2.2" /></svg></span>
+              <span class="pss-card__sla">SLA: 5 Days</span>
+            </div>
+            <h3 class="pss-card__title">Residence Certificate / Domicile</h3>
+            <p class="pss-card__subtitle">Statutory Resident Proof</p>
+            <p class="pss-card__desc">Proof of state residency essential for state government jobs quota, institutional university counseling, and regional benefits.</p>
+            <hr class="pss-card__divider">
+            <div class="pss-card__foot">
+              <span class="pss-card__note">Online Tehsildar Sign</span>
+              <a class="btn-pss" href="404.html">Apply Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+
+          <article class="pss-card">
+            <div class="pss-card__top">
+              <span class="pss-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 19 6-10 4 6 2-3 4 7z" /><path d="M4 19h16M9 12.5h.01" /></svg></span>
+              <span class="pss-card__sla is-instant">SLA: Instant</span>
+            </div>
+            <h3 class="pss-card__title">Land Records</h3>
+            <p class="pss-card__subtitle">Bhoomi, AnyRoR, 7/12, Patta Chitta, Khasra</p>
+            <p class="pss-card__desc">Instant geo-tagged land ownership extracts, RoR passbooks, mutation status, and encumbrance verification without office visits.</p>
+            <hr class="pss-card__divider">
+            <div class="pss-card__foot">
+              <span class="pss-card__note">Digitally Signed Copy</span>
+              <a class="btn-pss" href="404.html">Search Records <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg></a>
+            </div>
+          </article>
+
+          <article class="pss-card">
+            <div class="pss-card__top">
+              <span class="pss-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-16 0Z" /><path d="M12 11V7M8 9h.01M16 9h.01" /><path d="M6 15v3M12 15v3M18 15v3" /></svg></span>
+              <span class="pss-card__sla">SLA: 15 Days</span>
+            </div>
+            <h3 class="pss-card__title">Ration Card</h3>
+            <p class="pss-card__subtitle">NFSA Portal &amp; State e-PDS</p>
+            <p class="pss-card__desc">New family ration card addition, member modification, fair price shop transfer under One Nation One Ration Card (ONORC).</p>
+            <hr class="pss-card__divider">
+            <div class="pss-card__foot">
+              <span class="pss-card__note">ONORC Enabled</span>
+              <a class="btn-pss" href="404.html">Apply Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+
+          <article class="pss-card">
+            <div class="pss-card__top">
+              <span class="pss-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 11 8-7 8 7M6.5 9.5V20h11V9.5M10 20v-5h4v5" /></svg></span>
+              <span class="pss-card__sla">SLA: 3 Days</span>
+            </div>
+            <h3 class="pss-card__title">Property Services</h3>
+            <p class="pss-card__subtitle">Encumbrance Certificate &amp; e-Stamping</p>
+            <p class="pss-card__desc">Online property registration, title deeds, non-encumbrance certificates (EC), and transparent state stamp duty calculation.</p>
+            <hr class="pss-card__divider">
+            <div class="pss-card__foot">
+              <span class="pss-card__note">IGR Department</span>
+              <a class="btn-pss" href="404.html">Access Service <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+
+          <article class="pss-card">
+            <div class="pss-card__top">
+              <span class="pss-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v16l-2-1.4-2 1.4-2-1.4-2 1.4-2-1.4L6 20z" /><path d="M9 8h6M9 11h6M9 14h4" /></svg></span>
+              <span class="pss-card__sla is-instant">SLA: Instant</span>
+            </div>
+            <h3 class="pss-card__title">Local Tax</h3>
+            <p class="pss-card__subtitle">Property Tax, Water Cess, Trade License</p>
+            <p class="pss-card__desc">Urban Local Body (ULB) property tax self-assessment, municipal sewerage cess, annual trade license renewal and receipts.</p>
+            <hr class="pss-card__divider">
+            <div class="pss-card__foot">
+              <span class="pss-card__note">BBMP, BMC, MCD, etc.</span>
+              <a class="btn-pss" href="404.html">Pay Local Tax <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+
+          <article class="pss-card">
+            <div class="pss-card__top">
+              <span class="pss-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 13h5l-1 8 8-10h-5l1-8z" /></svg></span>
+              <span class="pss-card__sla is-instant">SLA: Instant</span>
+            </div>
+            <h3 class="pss-card__title">Utility Services</h3>
+            <p class="pss-card__subtitle">DISCOM Electricity, Jal Board, Gas</p>
+            <p class="pss-card__desc">Unified payment of state electricity board tariffs, municipal drinking water billing, new power connection, and name change.</p>
+            <hr class="pss-card__divider">
+            <div class="pss-card__foot">
+              <span class="pss-card__note">Bharat BillPay Integrated</span>
+              <a class="btn-pss" href="404.html">Pay Utilities <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="st-band" aria-label="State and Union Territory services overview">
+      <div class="container">
+        <figure class="st-band__figure">
+          <!-- TODO: swap with final compressed webp -->
+          <img src="assets/img/state-portal/img2.png"
+               alt="State and Union Territory services overview"
+               loading="lazy" decoding="async" width="1440" height="720">
+        </figure>
+      </div>
+    </section>
+
+    <section class="snd" aria-labelledby="snd-title">
+      <div class="container snd__grid">
+
+        <div class="snd__panel">
+          <span class="snd__eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11.5V7a2 2 0 0 1 4 0v4M7 11.5V9a2 2 0 0 1 4 0M11 10V8.5a2 2 0 0 1 4 0V12c0 3.3-2.2 6-6 6h-1.5A4.5 4.5 0 0 1 3 13.5V11a2 2 0 0 1 4 0v.5" /></svg>Direct Citizen Beneficiary Architecture</span>
+          <h2 id="snd-title" class="snd__title">State Schemes</h2>
+          <p class="snd__sub">Explore welfare schemes, financial aid, and Direct Benefit Transfer
+             (DBT) entitlements available in your state.</p>
+
+          <ul class="snd__list">
+            <li class="snd-item">
+              <span class="snd-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="12" rx="2" /><path d="M4 9h16M7 14h3M14 14h3" /></svg></span>
+              <div>
+                <p class="snd-item__title">Direct Benefit Transfer (DBT) Portals</p>
+                <p class="snd-item__desc">Aadhaar-seeded direct payments to beneficiary bank accounts across 300+ state subsidy programs.</p>
+              </div>
+            </li>
+            <li class="snd-item">
+              <span class="snd-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15h8v3H5zM13 15v3h4.5a3 3 0 0 0 3-3v-2h-5" /><circle cx="7" cy="18.5" r="1.8" /><circle cx="17.5" cy="18.5" r="1.8" /><path d="M5 15V9h4l2 3h2M5 12h3" /></svg></span>
+              <div>
+                <p class="snd-item__title">Farmer Subsidies &amp; Agritech Incentives</p>
+                <p class="snd-item__desc">Crop insurance compensations, solar pump subsidies, seed allocations and Rythu Bandhu / PM-Kisan top-ups.</p>
+              </div>
+            </li>
+            <li class="snd-item">
+              <span class="snd-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5.5 20c.6-4.5 2.7-7 6.5-7s5.9 2.5 6.5 7" /></svg></span>
+              <div>
+                <p class="snd-item__title">Women Empowerment &amp; Nutrition Direct Grants</p>
+                <p class="snd-item__desc">Monthly family head honorariums (e.g. Gruha Lakshmi, Lakshmir Bhandar, Ladli Behna), and maternity aids.</p>
+              </div>
+            </li>
+            <li class="snd-item">
+              <span class="snd-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 9.5 8.5-4.5 8.5 4.5-8.5 4.5-8.5-4.5Z" /><path d="M6.5 12.5v3.2c0 1.2 2.5 2.3 5.5 2.3s5.5-1.1 5.5-2.3v-3.2M20.5 10.2v4" /></svg></span>
+              <div>
+                <p class="snd-item__title">Girl Child Education &amp; Student Allowances</p>
+                <p class="snd-item__desc">Pre-matric &amp; post-matric state scholarships, free bicycle distribution, and higher education loan guarantees.</p>
+              </div>
+            </li>
+            <li class="snd-item">
+              <span class="snd-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2" /><path d="M8.5 21c.7-4 2.5-6.5 3.5-8l.5 4 1-3c1.5 1.5 2.6 4.5 2.8 7" /></svg></span>
+              <div>
+                <p class="snd-item__title">Senior Citizen &amp; Divyangjan Social Security</p>
+                <p class="snd-item__desc">Monthly non-contributory pensions, assistive device distributions, and biometric doorstep disbursements.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="snd__foot">
+            <span>Check your personal DBT eligibility</span>
+            <a class="btn-snd" href="404.html">Explore State Schemes <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </div>
+        </div>
+
+        <div class="snd__panel">
+          <span class="snd__eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21h16M6 21V8l6-4 6 4v13M9 21v-5h6v5M9 10h.01M12 10h.01M15 10h.01" /></svg>Grassroots Administrative Command</span>
+          <h2 class="snd__title">District Services</h2>
+          <p class="snd__sub">Select your district to connect directly to collectorate, tehsildar,
+             and local municipal desks.</p>
+
+          <div class="snd__select">
+            <span class="snd__select-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21h16M6 21V10l6-4 6 4v11M9 21v-4h6v4" /><path d="M9 12h.01M12 12h.01M15 12h.01" /></svg></span>
+            <div>
+              <label for="snd-district">SELECT DISTRICT</label>
+              <select id="snd-district"><option>Choose District...</option></select>
+            </div>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+          </div>
+
+          <ul class="snd__list snd__list--rows">
+            <li class="snd-row">
+              <span class="snd-row__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21h16M6 21V8l6-4 6 4v13M9 21v-5h6v5M9 10h.01M12 10h.01M15 10h.01" /></svg></span>
+              <span class="snd-row__body"><span class="snd-row__title">District Administration</span><span class="snd-row__desc">Collectorate, SDM, Tehsildar, Citizen Seva Kendra</span></span>
+              <svg class="snd-row__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+            </li>
+            <li class="snd-row">
+              <span class="snd-row__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg></span>
+              <span class="snd-row__body"><span class="snd-row__title">Local Certificates</span><span class="snd-row__desc">Character, Solvency, Non-Creamy Layer, Legal Heir Certificate</span></span>
+              <svg class="snd-row__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+            </li>
+            <li class="snd-row">
+              <span class="snd-row__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 19 6-10 4 6 2-3 4 7z" /><path d="M4 19h16" /></svg></span>
+              <span class="snd-row__body"><span class="snd-row__title">Revenue Services</span><span class="snd-row__desc">Land Mutation, Boundary demarcation, Encumbrance, Jamabandi</span></span>
+              <svg class="snd-row__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+            </li>
+            <li class="snd-row">
+              <span class="snd-row__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21h16M6 21V8l6-4 6 4v13M9 21v-5h6v5" /><path d="M9 10h.01M12 10h.01M15 10h.01" /></svg></span>
+              <span class="snd-row__body"><span class="snd-row__title">Municipal Services</span><span class="snd-row__desc">Building plan sanctions, Birth/Death registration, Trade permits</span></span>
+              <svg class="snd-row__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+            </li>
+            <li class="snd-row">
+              <span class="snd-row__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20S4 16.5 4 9.8A4.8 4.8 0 0 1 12 6.2a4.8 4.8 0 0 1 8 3.6C20 16.5 12 20 12 20Z" /></svg></span>
+              <span class="snd-row__body"><span class="snd-row__title">Welfare Services</span><span class="snd-row__desc">Divyangjan assistance, Old age pension, Widow pension, Destitute aid</span></span>
+              <svg class="snd-row__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+            </li>
+          </ul>
+
+          <a class="btn-snd-soft" href="404.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" /><path d="m15.5 8.5-2 5-5 2 2-5z" /></svg> Find Nearest District Citizen Seva Kendra</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bul" aria-labelledby="bul-title">
+      <div class="container">
+        <header class="bul__head">
+          <span class="bul__eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2" /><path d="M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14" /></svg>Federal Notification Wire</span>
+          <h2 id="bul-title" class="bul__title">State Updates &amp; Statutory Bulletins</h2>
+          <p class="bul__sub">Official legislative gazettes, newly digitized citizen gateways, and
+             state portal service alerts.</p>
+        </header>
+
+        <div class="bul__grid">
+          <article class="bul-panel">
+            <div class="bul-panel__head">
+              <span class="bul-panel__title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" /><path d="M10 21a2 2 0 0 0 4 0" /></svg>Government Notices</span>
+              <span class="bul-tag">GAZETTES</span>
+            </div>
+            <hr class="bul-panel__divider">
+            <ul class="bul-panel__list">
+              <li class="bul-item bul-item--navy">
+                <span class="bul-item__meta">14 MAY 2025 &bull; All States</span>
+                <h3 class="bul-item__title">Aadhaar-DigiLocker Integration Deadline</h3>
+                <p class="bul-item__desc">Mandatory linking of state revenue certificates to DigiLocker sovereign locker for instant paperless admissions.</p>
+              </li>
+              <li class="bul-item bul-item--orange">
+                <span class="bul-item__meta">11 MAY 2025 &bull; Maharashtra &amp; Gujarat</span>
+                <h3 class="bul-item__title">Unified 7/12 Land Record Mutation Rules</h3>
+                <p class="bul-item__desc">Direct automated succession entry within 72 hours of registered sale deed through bilateral registry sync.</p>
+              </li>
+              <li class="bul-item bul-item--navy">
+                <span class="bul-item__meta">08 MAY 2025 &bull; Tamil Nadu &amp; Karnataka</span>
+                <h3 class="bul-item__title">Inter-State Bus Pass &amp; Concession Portal</h3>
+                <p class="bul-item__desc">Single window student and disabled transport pass verification across SETC and KSRTC networks.</p>
+              </li>
+            </ul>
+            <a class="bul-panel__foot" href="#top">View All Official State Gazettes <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="bul-panel">
+            <div class="bul-panel__head">
+              <span class="bul-panel__title"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34h.01a1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87v.01a1.7 1.7 0 0 0 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1Z" /></svg>New Services</span>
+              <span class="bul-tag bul-tag--green">+48 LAUNCHED</span>
+            </div>
+            <hr class="bul-panel__divider">
+            <ul class="bul-panel__list">
+              <li class="bul-item bul-item--green">
+                <span class="bul-item__meta">Uttar Pradesh (eSathi)</span>
+                <h3 class="bul-item__title">Online Nazul Land Regularization Desk</h3>
+                <p class="bul-item__desc">Direct application for leasehold to freehold conversion and online registry scrutiny without manual submissions.</p>
+              </li>
+              <li class="bul-item bul-item--green">
+                <span class="bul-item__meta">Delhi (NCT)</span>
+                <h3 class="bul-item__title">Doorstep Biometric Birth Card Delivery</h3>
+                <p class="bul-item__desc">Mobile Sahayak home visit for fast-track birth certification and instant DigiLocker document dispatch.</p>
+              </li>
+              <li class="bul-item bul-item--green">
+                <span class="bul-item__meta">West Bengal (Duare Sarkar)</span>
+                <h3 class="bul-item__title">Digital Fishery &amp; Artisan Credit Pass</h3>
+                <p class="bul-item__desc">Instant low-interest credit cards for coastal fishermen and grassroots handloom weavers in 23 districts.</p>
+              </li>
+            </ul>
+            <a class="bul-panel__foot" href="#top">Explore All Newly Digitized Gateways <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+
+          <article class="bul-panel">
+            <div class="bul-panel__head">
+              <span class="bul-panel__title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v4h-4" /></svg>Service Changes</span>
+              <span class="bul-tag">SLA &amp; MAINTENANCE</span>
+            </div>
+            <hr class="bul-panel__divider">
+            <ul class="bul-panel__list">
+              <li class="bul-item bul-item--navy">
+                <span class="bul-item__meta">Expedited Citizen Charter</span>
+                <h3 class="bul-item__title">Statutory SLA Reduced to 48 Hours</h3>
+                <p class="bul-item__desc">Domicile and income certificates for NEET &amp; JEE counseling candidates prioritized across all e-District nodes.</p>
+              </li>
+              <li class="bul-item bul-item--orange">
+                <span class="bul-item__meta">Scheduled Maintenance</span>
+                <h3 class="bul-item__title">NIC Cloud Sub-National Database Migration</h3>
+                <p class="bul-item__desc">Scheduled 30-minute sync window on Sunday 02:00-02:30 IST; state emergency helplines will remain unaffected.</p>
+              </li>
+              <li class="bul-item bul-item--navy">
+                <span class="bul-item__meta">Zero-Fee Initiative</span>
+                <h3 class="bul-item__title">100% Fee Waiver for Caste &amp; Disability Certs</h3>
+                <p class="bul-item__desc">All administrative stamping fees abolished permanently for Divyangjan and BPL categories across all UTs.</p>
+              </li>
+            </ul>
+            <a class="bul-panel__foot" href="#top">Read Service Level Charters <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="fsso" aria-labelledby="fsso-title">
+      <div class="container">
+        <div class="fsso__panel">
+          <div class="fsso__content">
+            <span class="fsso__eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1" /></svg>Unified Federal Single-Sign-On</span>
+            <h2 id="fsso-title" class="fsso__title">Access All 36 State Portals with MeriPehchaan &amp; DigiLocker</h2>
+            <p class="fsso__sub">Never re-upload identity proofs. Authorize your DigiLocker documents
+               directly into any State e-District portal instantly with legally compliant digital
+               signatures under the Information Technology Act.</p>
+          </div>
+          <div class="fsso__actions">
+            <div class="fsso__stat">
+              <span class="fsso__stat-value">6.72 Billion+</span>
+              <span class="fsso__stat-label">Documents Issued</span>
+            </div>
+            <a class="btn-fsso" href="404.html"><span>Link MeriPehchaan Account</span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <!-- TODO: replace logo SVG -->
+          <a class="footer__logo" href="index.html" aria-label="Stackly home">
+            <img src="assets/logo/logo-stackly.webp" alt="Stackly" width="170" height="36">
+          </a>
+          <p class="footer__about">JanSeva is an integrated single-window platform bringing Central, State, and District administrative utilities into a unified, authenticated, and citizen-first digital journey.</p>
+          <div class="footer__accr">
+            <span class="footer__accr-label">Accreditations:</span>
+            <span class="accr-badge">STQC Certified</span>
+            <span class="accr-badge">WCAG 2.2 AAA</span>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Citizen Lifecycle">
+          <h4>Citizen Lifecycle</h4>
+          <ul>
+            <li><a href="404.html">Birth &amp; Child Healthcare</a></li>
+            <li><a href="404.html">Education &amp; Skill Vouchers</a></li>
+            <li><a href="404.html">Employment &amp; Labor Welfare</a></li>
+            <li><a href="404.html">Housing &amp; Land Registry</a></li>
+            <li><a href="404.html">Retirement &amp; Social Pension</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="National Gateways">
+          <h4>National Gateways</h4>
+          <ul>
+            <li><a href="404.html">DigiLocker Ecosystem</a></li>
+            <li><a href="404.html">MyGov Citizen Engagement</a></li>
+            <li><a href="404.html">CPGRAMS Grievance Portal</a></li>
+            <li><a href="404.html">India.gov.in Directory</a></li>
+            <li><a href="404.html">Direct Benefit Transfer (DBT)</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="Governance and Legal">
+          <h4>Governance &amp; Legal</h4>
+          <ul>
+            <li><a href="404.html">RTI Online Portal</a></li>
+            <li><a href="404.html">Data Privacy Policy</a></li>
+            <li><a href="404.html">Terms of Service</a></li>
+            <li><a href="404.html">Hyperlinking Policy</a></li>
+            <li><a href="404.html">Helpdesk &amp; Escalation</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__strip">
+        <span>Emergency: 112</span><i></i>
+        <span>Cyber Helpline: 1930</span><i></i>
+        <span>Health: 1075</span><i></i>
+        <span>RTI Online</span><i></i>
+        <span class="is-strong">STQC Certified</span><i></i>
+        <span class="is-strong">WCAG 2.2 AAA Compliant</span><i></i>
+        <span>Terms of Service</span><i></i>
+        <span>Privacy Policy</span><i></i>
+        <span>Helpdesk</span>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__credit">Designed, developed and hosted by National Informatics Centre (NIC), Ministry of Electronics &amp; Information Technology, Government of India.</p>
+        <div class="footer__meta">
+          <span>Last Updated: 24 Oct 2024</span><i></i>
+          <span class="footer__safe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg>Cyber Safe Verified</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="accessibility-tools">
+    <button class="floating-tool" type="button" data-a11y-trigger aria-expanded="false" aria-controls="a11y-panel" aria-label="Open accessibility options">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2" /><path d="M5 9h14M12 9v10M8.5 20l3.5-6 3.5 6" /></svg>
+      <span>Accessibility</span>
+    </button>
+    <div class="a11y-panel" id="a11y-panel" hidden>
+      <strong>Accessibility options</strong>
+      <button type="button" data-a11y-action="contrast">Increase contrast</button>
+      <button type="button" data-a11y-action="text">Larger text</button>
+      <button type="button" data-a11y-action="reset">Reset view</button>
+    </div>
+  </div>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6" /></svg>
+  </button>
+
+  <script src="js/state-portal.js" defer></script>
+</body>
+</html>

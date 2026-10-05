@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stackly Government Official Console — verification queues, grievance desk, application review, citizen records and analytics for authorised officers.">
+  <title>Official Console | Stackly MeriPehchaan</title>
+  <link rel="stylesheet" href="css/government-dashboard.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<main id="main-content">
+    <div class="dash">
+      <aside class="dash__side" id="side">
+        <div class="dash__brand">
+          <span class="dash__brand-logo is-official"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg></span>
+          <div><strong>Official Console</strong><small>MeriPehchaan NSSO</small></div>
+        </div>
+        <nav class="dash__nav" aria-label="Official dashboard">
+          <a class="dnav is-active" href="#overview" data-view="overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1" /><rect x="14" y="4" width="6" height="6" rx="1" /><rect x="4" y="14" width="6" height="6" rx="1" /><rect x="14" y="14" width="6" height="6" rx="1" /></svg> Overview</a>
+          <a class="dnav" href="#verification" data-view="verification"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg> Verification Queue</a>
+          <a class="dnav" href="#grievances" data-view="grievances"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M4 10v4l12 5V5L4 10Z" /><path d="M16 9a3 3 0 0 1 0 6M7 14v4" /></svg> Grievance Desk</a>
+          <a class="dnav" href="#applications" data-view="applications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z" /><path d="m3 13 9 5 9-5" /></svg> Application Review</a>
+          <a class="dnav" href="#records" data-view="records"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" /><circle cx="10" cy="10" r="3" /><path d="M6.5 17c.7-2 2-3 3.5-3s2.8 1 3.5 3M16 9h3M16 13h3" /></svg> Citizen Records</a>
+          <a class="dnav" href="#enrollments" data-view="enrollments"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3" /><path d="M4 19c.6-3 2.1-4.5 5-4.5s4.4 1.5 5 4.5M16 8a3 3 0 0 1 0 6M17.5 14.5c1.7.5 2.8 2 3.2 4.5" /></svg> Scheme Enrollments</a>
+          <a class="dnav" href="#reports" data-view="reports"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M4 19V5M4 19h17M8 16v-4M12 16V8M16 16v-6M20 16v-9" /></svg> Reports &amp; Analytics</a>
+          <a class="dnav" href="#notifications" data-view="notifications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M6 10a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z" /><path d="M10 20a2 2 0 0 0 4 0" /></svg> Notifications</a>
+          <a class="dnav" href="#profile" data-view="profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5 19c.7-3.2 3.4-5 7-5s6.3 1.8 7 5" /></svg> Profile</a>
+          <a class="dnav" href="#settings" data-view="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h10M18 18h2" /><circle cx="16" cy="6" r="2" /><circle cx="10" cy="12" r="2" /><circle cx="16" cy="18" r="2" /></svg> Settings</a>
+        </nav>
+        <div class="dash__side-foot">
+          <a class="dash__switch" href="citizen-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M7 8 3 12l4 4M3 12h13M17 8l4 4-4 4" /></svg> Switch to Citizen view</a>
+          <a class="dash__logout" href="#" id="logout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3" /><path d="M10 12H3M7 8l-4 4 4 4" /></svg> Sign Out</a>
+        </div>
+      </aside>
+      <div class="dash__overlay" id="dashOverlay"></div>
+
+      <div class="dash__main">
+        <header class="dash__topbar">
+          <button class="dash__burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>
+          <div class="dash__search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+            <input type="search" placeholder="Search grievances, citizens, applications…" aria-label="Search">
+          </div>
+          <div class="dash__top-actions">
+            <span class="dash__duty"><i></i> On Duty</span>
+            <button class="dash__icon-btn" aria-label="Notifications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M6 10a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z" /><path d="M10 20a2 2 0 0 0 4 0" /></svg><i class="dash__badge"></i></button>
+            <div class="dash__user">
+              <span class="dash__avatar is-official" id="topAvatar">VS</span>
+              <span class="dash__user-text">
+                <strong id="topName">Shri V. Sridhar, IRS</strong>
+                <small id="topRole">Joint Commissioner (Grievance)</small>
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <main class="dash__views" id="views">
+
+          <!-- ============ OVERVIEW ============ -->
+          <section class="view is-active" id="view-overview" data-view="overview">
+            <div class="welcome">
+              <div>
+                <span class="welcome__eyebrow">Official Console</span>
+                <h2>Good morning, <span id="welcomeName">Shri V. Sridhar, IRS</span></h2>
+                <div class="welcome__meta">
+                  <span class="welcome__chip" id="welcomeRole">Joint Commissioner (Grievance)</span>
+                  <span id="welcomeDept">Central Board of Direct Taxes</span>
+                  <span id="welcomeDate">Monday, 5 October 2026</span>
+                </div>
+              </div>
+              <div class="welcome__verify">
+                <span class="ring is-dark" style="--pct:94;--ring-color:#16A34A"><b>94%</b></span>
+                <div><strong>SLA Compliance</strong><small>Against 30-day redressal target</small></div>
+              </div>
+            </div>
+
+            <div class="dstats">
+              <div class="dstats__grid">
+                <article class="stat-card">
+                  <div class="stat-card__top">
+                    <span class="stat-card__label">Pending Verifications</span>
+                    <span class="stat-card__icon is-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m9 12 2 2 4-4" /></svg></span>
+                  </div>
+                  <div class="stat-card__mid">
+                    <span class="stat-card__value is-amber"><span class="counter" data-target="128">128</span></span>
+                    <span class="stat-card__tag is-amber">Action Needed</span>
+                  </div>
+                  <div class="stat-card__spark" data-spark="88,96,104,112,120,128"></div>
+                  <p class="stat-card__foot">Across 6 departments</p>
+                </article>
+                <article class="stat-card">
+                  <div class="stat-card__top">
+                    <span class="stat-card__label">Grievances Assigned</span>
+                    <span class="stat-card__icon is-navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M4 10v4l12 5V5L4 10Z" /><path d="M16 9a3 3 0 0 1 0 6M7 14v4" /></svg></span>
+                  </div>
+                  <div class="stat-card__mid">
+                    <span class="stat-card__value"><span class="counter" data-target="46">46</span></span>
+                    <span class="stat-card__tag is-lav">Open Cases</span>
+                  </div>
+                  <div class="stat-card__spark" data-spark="30,34,38,40,43,46"></div>
+                  <p class="stat-card__foot">3 breaching SLA</p>
+                </article>
+                <article class="stat-card">
+                  <div class="stat-card__top">
+                    <span class="stat-card__label">Avg. Resolution Time</span>
+                    <span class="stat-card__icon is-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg></span>
+                  </div>
+                  <div class="stat-card__mid">
+                    <span class="stat-card__value"><span class="counter" data-target="3.2" data-decimals="1">3.2</span> <small>days</small></span>
+                    <span class="stat-card__tag is-green">Improving</span>
+                  </div>
+                  <div class="stat-card__spark" data-spark="4.6,4.2,4.0,3.6,3.4,3.2"></div>
+                  <p class="stat-card__foot">Target: under 5 days</p>
+                </article>
+                <article class="stat-card">
+                  <div class="stat-card__top">
+                    <span class="stat-card__label">SLA Compliance</span>
+                    <span class="stat-card__icon is-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M4 19V5M4 19h17M8 16v-4M12 16V8M16 16v-6" /></svg></span>
+                  </div>
+                  <div class="stat-card__mid">
+                    <span class="stat-card__value"><span class="counter" data-target="94">94</span>%</span>
+                    <span class="stat-card__tag is-green">On Track</span>
+                  </div>
+                  <div class="stat-card__ring" id="kpiRing" style="height:56px;display:flex;align-items:center"></div>
+                  <p class="stat-card__foot">Last 30 days</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="chart-grid chart-grid--a">
+              <article class="chart-card">
+                <div class="chart-card__head">
+                  <h3>Grievance Inflow vs Resolution (Last 6 Months)</h3>
+                  <span class="chart-card__legend" style="gap:14px">
+                    <span style="display:inline-flex;align-items:center;gap:6px"><i style="background:#B45309"></i> Inflow</span>
+                    <span style="display:inline-flex;align-items:center;gap:6px"><i style="background:#16A34A"></i> Resolved</span>
+                  </span>
+                </div>
+                <div class="chart" id="chartInflow" role="img" aria-label="Line chart comparing grievance inflow and resolved counts from May to October. Inflow 120,138,126,160,142,171; Resolved 104,126,118,149,135,158."></div>
+              </article>
+              <article class="chart-card">
+                <div class="chart-card__head"><h3>Grievance Status Split</h3></div>
+                <div class="donut-wrap">
+                  <div class="chart" id="chartStatus" role="img" aria-label="Donut chart: Resolved 58 percent, Under Review 22 percent, In-Progress 14 percent, Escalated 6 percent. Total 312."></div>
+                  <div class="chart-legend" id="legendStatus"></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="chart-grid chart-grid--b">
+              <article class="chart-card">
+                <div class="chart-card__head"><h3>Verifications Processed (This Week)</h3></div>
+                <div class="chart" id="chartWeek" role="img" aria-label="Bar chart of verifications processed: Mon 24, Tue 31, Wed 18, Thu 27, Fri 33, Sat 12."></div>
+              </article>
+              <article class="chart-card">
+                <div class="chart-card__head"><h3>Pending by Department</h3></div>
+                <div class="chart" id="chartDept" role="img" aria-label="Horizontal bar chart of pending items by department: Railways 42, Direct Taxes 36, Posts 28, Telecom 22, Agriculture 18."></div>
+              </article>
+            </div>
+
+            <article class="chart-card" style="margin-top:18px">
+              <div class="chart-card__head"><h3>Action Inbox</h3></div>
+              <div class="inbox">
+                <div class="inbox__item is-blue">
+                  <div class="inbox__body"><strong>12 verifications awaiting your approval</strong><small>Oldest pending for 2 days</small></div>
+                  <div class="inbox__actions"><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button">Review</button></div>
+                </div>
+                <div class="inbox__item is-amber">
+                  <div class="inbox__body"><strong>3 grievances breaching 30-day SLA</strong><small>Escalation recommended</small></div>
+                  <div class="inbox__actions"><button onclick="window.location.href='404.html'" class="dbtn is-brand" type="button">Escalate</button></div>
+                </div>
+                <div class="inbox__item is-green">
+                  <div class="inbox__body"><strong>5 citizen document re-uploads</strong><small>Awaiting quality check</small></div>
+                  <div class="inbox__actions"><button onclick="window.location.href='404.html'" class="dbtn" type="button">Inspect</button></div>
+                </div>
+                <div class="inbox__item">
+                  <div class="inbox__body"><strong>2 appeal requests assigned</strong><small>Response due this week</small></div>
+                  <div class="inbox__actions"><button onclick="window.location.href='404.html'" class="dbtn" type="button">Open</button></div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <!-- ============ VERIFICATION ============ -->
+          <section class="view" id="view-verification" data-view="verification">
+            <div class="dash-sec-head">
+              <div><h2>Pending Verifications</h2><p>Approve, reject or request more information from citizens.</p></div>
+              <span class="pill is-amber">128 Pending</span>
+            </div>
+            <div class="chips">
+              <button onclick="window.location.href='404.html'" class="chip is-active" type="button">All</button>
+              <button onclick="window.location.href='404.html'" class="chip" type="button">High Risk</button>
+              <button onclick="window.location.href='404.html'" class="chip" type="button">Aadhaar</button>
+              <button onclick="window.location.href='404.html'" class="chip" type="button">Documents</button>
+            </div>
+            <div class="dtable-wrap">
+              <table class="dtable">
+                <thead><tr><th>Citizen</th><th>Requested Document</th><th>Submitted</th><th>Risk</th><th>Status</th><th>Actions</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Rohit Kumar</strong><br><small>Aadhaar •••• 9021</small></td>
+                    <td>Passport Address Proof</td><td>12 Oct 2024</td>
+                    <td><span class="pill is-green">Low</span></td><td><span class="pill is-amber">Pending</span></td>
+                    <td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button" data-action="approve">Approve</button> <button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="reject">Reject</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Anita Deshmukh</strong><br><small>Aadhaar •••• 4412</small></td>
+                    <td>Income Certificate</td><td>12 Oct 2024</td>
+                    <td><span class="pill is-red">High</span></td><td><span class="pill is-amber">Pending</span></td>
+                    <td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button" data-action="approve">Approve</button> <button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="reject">Reject</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Mohammed Irfan</strong><br><small>Aadhaar •••• 7781</small></td>
+                    <td>Domicile Certificate</td><td>11 Oct 2024</td>
+                    <td><span class="pill is-green">Low</span></td><td><span class="pill is-amber">Pending</span></td>
+                    <td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button" data-action="approve">Approve</button> <button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="reject">Reject</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Lakshmi Narayan</strong><br><small>Aadhaar •••• 1209</small></td>
+                    <td>Driving Licence Renewal</td><td>10 Oct 2024</td>
+                    <td><span class="pill is-amber">Medium</span></td><td><span class="pill is-amber">Pending</span></td>
+                    <td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button" data-action="approve">Approve</button> <button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="reject">Reject</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Priya Menon</strong><br><small>Aadhaar •••• 5567</small></td>
+                    <td>Caste Certificate</td><td>09 Oct 2024</td>
+                    <td><span class="pill is-green">Low</span></td><td><span class="pill is-amber">Pending</span></td>
+                    <td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button" data-action="approve">Approve</button> <button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="reject">Reject</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Sanjay Gupta</strong><br><small>Aadhaar •••• 3345</small></td>
+                    <td>PAN–Aadhaar Linkage</td><td>08 Oct 2024</td>
+                    <td><span class="pill is-red">High</span></td><td><span class="pill is-amber">Pending</span></td>
+                    <td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button" data-action="approve">Approve</button> <button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="reject">Reject</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <article class="chart-card" style="margin-top:18px">
+              <div class="chart-card__head"><h3>Approval Rate</h3></div>
+              <div class="donut-wrap">
+                <div class="chart" id="chartApproval" role="img" aria-label="Donut chart of approval rate: Approved 87 percent, Rejected 13 percent."></div>
+                <div class="chart-legend" id="legendApproval"></div>
+              </div>
+            </article>
+          </section>
+
+          <!-- ============ GRIEVANCES ============ -->
+          <section class="view" id="view-grievances" data-view="grievances">
+            <div class="dash-sec-head">
+              <div><h2>Grievance Desk</h2><p>Track redressal against the 30-day SLA and issue Action Taken Reports.</p></div>
+              <span class="pill is-amber">46 Assigned</span>
+            </div>
+            <div class="dtable-wrap">
+              <table class="dtable">
+                <thead><tr><th>Reg No</th><th>Citizen</th><th>Department</th><th>Days Elapsed</th><th>Status</th><th>Action</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>PMOPG/E/2024/0081290</strong></td><td>Rohit Kumar</td><td>Direct Taxes</td>
+                    <td><div class="sla"><div class="sla__bar"><span style="width:87%"></span></div><span class="sla__days">26 / 30</span></div></td>
+                    <td><span class="pill is-amber">Under Review</span></td><td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button" data-action="atr">Issue ATR</button></td></tr>
+                  <tr><td><strong>PMOPG/E/2024/0071123</strong></td><td>Anita Deshmukh</td><td>Railways</td>
+                    <td><div class="sla"><div class="sla__bar is-danger"><span style="width:100%"></span></div><span class="sla__days">33 / 30</span></div></td>
+                    <td><span class="pill is-red">SLA Breached</span></td><td><button onclick="window.location.href='404.html'" class="dbtn is-brand" type="button" data-action="escalate">Escalate</button></td></tr>
+                  <tr><td><strong>DLGOV/E/2024/0044127</strong></td><td>Mohammed Irfan</td><td>Posts</td>
+                    <td><div class="sla"><div class="sla__bar is-warn"><span style="width:73%"></span></div><span class="sla__days">22 / 30</span></div></td>
+                    <td><span class="pill is-amber">Under Review</span></td><td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button" data-action="atr">Issue ATR</button></td></tr>
+                  <tr><td><strong>CPGRAMS/E/2024/0011908</strong></td><td>Lakshmi Narayan</td><td>Telecom</td>
+                    <td><div class="sla"><div class="sla__bar"><span style="width:47%"></span></div><span class="sla__days">14 / 30</span></div></td>
+                    <td><span class="pill is-lav">In-Progress</span></td><td><button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="open">Open</button></td></tr>
+                  <tr><td><strong>PMOPG/E/2024/0032011</strong></td><td>Priya Menon</td><td>Agriculture</td>
+                    <td><div class="sla"><div class="sla__bar"><span style="width:20%"></span></div><span class="sla__days">6 / 30</span></div></td>
+                    <td><span class="pill is-green">Resolved</span></td><td><button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="open">Open</button></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- ============ APPLICATIONS ============ -->
+          <section class="view" id="view-applications" data-view="applications">
+            <div class="dash-sec-head">
+              <div><h2>Application Review</h2><p>Review submitted applications and take approval decisions.</p></div>
+              <span class="pill is-amber">18 Awaiting Action</span>
+            </div>
+
+            <div class="kpi-strip">
+              <article class="stat-card">
+                <div class="stat-card__top">
+                  <span class="stat-card__label">Pending Review</span>
+                  <span class="stat-card__icon is-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg></span>
+                </div>
+                <div class="stat-card__mid"><span class="stat-card__value is-amber">18</span><span class="stat-card__tag is-amber">Awaiting</span></div>
+                <p class="stat-card__foot">Across 6 departments</p>
+              </article>
+              <article class="stat-card">
+                <div class="stat-card__top">
+                  <span class="stat-card__label">Approved Today</span>
+                  <span class="stat-card__icon is-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m9 12 2 2 4-4" /></svg></span>
+                </div>
+                <div class="stat-card__mid"><span class="stat-card__value">24</span><span class="stat-card__tag is-green">Cleared</span></div>
+                <p class="stat-card__foot">Includes 12 auto e-KYC</p>
+              </article>
+              <article class="stat-card">
+                <div class="stat-card__top">
+                  <span class="stat-card__label">Returned</span>
+                  <span class="stat-card__icon is-navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M9 14 4 9l5-5" /><path d="M4 9h11a5 5 0 0 1 0 10H9" /></svg></span>
+                </div>
+                <div class="stat-card__mid"><span class="stat-card__value">5</span><span class="stat-card__tag is-lav">Re-upload</span></div>
+                <p class="stat-card__foot">Awaiting citizen response</p>
+              </article>
+              <article class="stat-card">
+                <div class="stat-card__top">
+                  <span class="stat-card__label">Avg. Turnaround</span>
+                  <span class="stat-card__icon is-navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M4 19V5M4 19h17M8 16v-4M12 16V8M16 16v-6" /></svg></span>
+                </div>
+                <div class="stat-card__mid"><span class="stat-card__value">1.4 <small>days</small></span><span class="stat-card__tag is-green">On Track</span></div>
+                <p class="stat-card__foot">Target under 3 days</p>
+              </article>
+            </div>
+
+            <div class="dtable-wrap" style="margin-top:18px">
+              <table class="dtable">
+                <thead><tr><th>Application ID</th><th>Applicant</th><th>Service</th><th>Submitted</th><th>Priority</th><th>Status</th><th>Action</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>APP-24-0019284102</strong></td><td>Rohit Kumar</td><td>Passport Re-issue</td><td>12 Sep 2024</td><td><span class="pill is-red">High</span></td><td><span class="pill is-amber">In-Review</span></td><td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button">Approve</button> <button onclick="window.location.href='404.html'" class="dbtn" type="button">Return</button></td></tr>
+                  <tr><td><strong>APP-DL-042023009182</strong></td><td>Anita Deshmukh</td><td>Driving Licence Renewal</td><td>28 Jul 2024</td><td><span class="pill is-lav">Normal</span></td><td><span class="pill is-green">Verified</span></td><td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button">Approve</button> <button onclick="window.location.href='404.html'" class="dbtn" type="button">Return</button></td></tr>
+                  <tr><td><strong>APP-PMK-9182741</strong></td><td>Mohammed Irfan</td><td>PM Kisan Samman Nidhi</td><td>04 Jun 2024</td><td><span class="pill is-lav">Normal</span></td><td><span class="pill is-green">Approved</span></td><td><button onclick="window.location.href='404.html'" class="dbtn" type="button">View</button></td></tr>
+                  <tr><td><strong>APP-DLGOV-00219</strong></td><td>Lakshmi Narayan</td><td>Income Certificate</td><td>10 Oct 2024</td><td><span class="pill is-red">High</span></td><td><span class="pill is-amber">Pending</span></td><td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button">Approve</button> <button onclick="window.location.href='404.html'" class="dbtn" type="button">Return</button></td></tr>
+                  <tr><td><strong>APP-DL-2024-77810</strong></td><td>Priya Menon</td><td>Caste Certificate</td><td>08 Oct 2024</td><td><span class="pill is-lav">Low</span></td><td><span class="pill is-amber">In-Review</span></td><td><button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button">Approve</button> <button onclick="window.location.href='404.html'" class="dbtn" type="button">Return</button></td></tr>
+                  <tr><td><strong>APP-EPFO-2024-4412</strong></td><td>Sanjay Gupta</td><td>EPFO UAN Linkage</td><td>01 Oct 2024</td><td><span class="pill is-lav">Normal</span></td><td><span class="pill is-green">Approved</span></td><td><button onclick="window.location.href='404.html'" class="dbtn" type="button">View</button></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <article class="chart-card" style="margin-top:18px">
+              <div class="chart-card__head"><h3>Recent Decisions</h3></div>
+              <ul class="timeline">
+                <li><span class="timeline__dot" style="background:#16A34A"></span><div class="timeline__body"><strong>Application approved</strong><span> Passport re-issue for Rohit Kumar cleared at MEA.</span><br><small>Today, 10:12 AM</small></div></li>
+                <li><span class="timeline__dot" style="background:#B45309"></span><div class="timeline__body"><strong>Application returned</strong><span> Address proof missing for Anita Deshmukh.</span><br><small>Today, 09:40 AM</small></div></li>
+                <li><span class="timeline__dot" style="background:#16A34A"></span><div class="timeline__body"><strong>Application approved</strong><span> Income certificate for Lakshmi Narayan issued.</span><br><small>Yesterday, 04:25 PM</small></div></li>
+                <li><span class="timeline__dot" style="background:#1D4ED8"></span><div class="timeline__body"><strong>e-KYC auto-verified</strong><span> 12 applications cleared via DigiLocker.</span><br><small>Yesterday, 02:05 PM</small></div></li>
+                <li><span class="timeline__dot" style="background:#DC2626"></span><div class="timeline__body"><strong>Application escalated</strong><span> SLA breach on EPFO UAN linkage (Sanjay Gupta).</span><br><small>2 days ago</small></div></li>
+              </ul>
+            </article>
+          </section>
+
+          <!-- ============ RECORDS ============ -->
+          <section class="view" id="view-records" data-view="records">
+            <div class="dash-sec-head"><div><h2>Citizen Records</h2><p>Search verified citizen identities and inspect their document vault.</p></div></div>
+            <div class="record-layout">
+              <div>
+                <div class="record-search">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+                  <input type="search" placeholder="Search by name, Aadhaar last 4 or employee ID…" aria-label="Search citizen records">
+                </div>
+                <div class="dtable-wrap">
+                  <table class="dtable">
+                    <thead><tr><th>Name</th><th>Aadhaar</th><th>State</th><th>Verified Docs</th><th>Last Activity</th><th>Action</th></tr></thead>
+                    <tbody>
+                      <tr><td><strong>Rohit Kumar</strong></td><td>XXXX-XXXX-9021</td><td>Delhi NCT</td><td>6</td><td>Today, 09:42 AM</td><td><button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="open">Open</button></td></tr>
+                      <tr><td><strong>Anita Deshmukh</strong></td><td>XXXX-XXXX-4412</td><td>Maharashtra</td><td>5</td><td>Yesterday, 04:15 PM</td><td><button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="open">Open</button></td></tr>
+                      <tr><td><strong>Mohammed Irfan</strong></td><td>XXXX-XXXX-7781</td><td>Uttar Pradesh</td><td>4</td><td>2 days ago</td><td><button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="open">Open</button></td></tr>
+                      <tr><td><strong>Lakshmi Narayan</strong></td><td>XXXX-XXXX-1209</td><td>Karnataka</td><td>6</td><td>3 days ago</td><td><button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="open">Open</button></td></tr>
+                      <tr><td><strong>Priya Menon</strong></td><td>XXXX-XXXX-5567</td><td>Tamil Nadu</td><td>3</td><td>5 days ago</td><td><button onclick="window.location.href='404.html'" class="dbtn" type="button" data-action="open">Open</button></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <aside class="dcard record-detail">
+                <div class="record-detail__top">
+                  <span class="record-detail__avatar">RK</span>
+                  <div><strong>Rohit Kumar</strong><small>Citizen • Delhi NCT</small></div>
+                </div>
+                <div class="record-detail__row"><span>Aadhaar</span><strong>XXXX-XXXX-9021</strong></div>
+                <div class="record-detail__row"><span>ABHA ID</span><strong>91-4820-1928-33</strong></div>
+                <div class="record-detail__row"><span>Verified Docs</span><strong>6</strong></div>
+                <div class="record-detail__row"><span>Profile Score</span><strong>95%</strong></div>
+                <div class="record-detail__row"><span>Last Activity</span><strong>Today, 09:42 AM</strong></div>
+                <button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button" style="width:100%;margin-top:16px" data-action="open">Open Full Record</button>
+              </aside>
+            </div>
+          </section>
+
+          <!-- ============ ENROLLMENTS ============ -->
+          <section class="view" id="view-enrollments" data-view="enrollments">
+            <div class="dash-sec-head"><div><h2>Scheme Enrollments</h2><p>Monitor enrolment volumes and outreach for flagship schemes.</p></div></div>
+            <div class="schemes__grid">
+              <article class="scard">
+                <span class="scard__icon is-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="M12 9v5M9.5 11.5h5" /></svg></span>
+                <h3 class="scard__title">Ayushman Bharat (AB-PMJAY)</h3>
+                <p class="scard__text">Cashless hospital cover of ₹5,00,000 per family per year.</p>
+                <div class="scard__foot"><span class="scard__value">48,210 Enrolled</span><span class="pill is-green">+6.2%</span></div>
+              </article>
+              <article class="scard">
+                <span class="scard__icon is-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="16" height="6" rx="1" /><path d="M8 10v3M12 10v3M16 10v3M4 13h16" /><path d="M7 20h10M10 16v4M14 16v4" /></svg></span>
+                <h3 class="scard__title">PM Surya Ghar: Muft Bijli Yojana</h3>
+                <p class="scard__text">Rooftop solar subsidy up to ₹78,000 per household.</p>
+                <div class="scard__foot"><span class="scard__value is-amber">19,640 Enrolled</span><span class="pill is-green">+11.4%</span></div>
+              </article>
+              <article class="scard">
+                <span class="scard__icon is-lav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="m3.5 9.5 8.5-4.5 8.5 4.5-8.5 4.5-8.5-4.5Z" /><path d="M6.5 12.5v3.2c0 1.2 2.5 2.3 5.5 2.3s5.5-1.1 5.5-2.3v-3.2M20.5 10.2v4" /></svg></span>
+                <h3 class="scard__title">National Apprenticeship (NAPS)</h3>
+                <p class="scard__text">Stipend support up to ₹1,500/month for apprenticeships.</p>
+                <div class="scard__foot"><span class="scard__value">12,905 Enrolled</span><span class="pill is-amber">+2.8%</span></div>
+              </article>
+            </div>
+            <article class="chart-card" style="margin-top:18px">
+              <div class="chart-card__head"><h3>Enrollments by Scheme</h3></div>
+              <div class="chart" id="chartEnroll" role="img" aria-label="Bar chart of enrollments by scheme: Ayushman Bharat 48,210; PM Surya Ghar 19,640; NAPS 12,905; PM Kisan 33,120."></div>
+            </article>
+          </section>
+
+          <!-- ============ REPORTS ============ -->
+          <section class="view" id="view-reports" data-view="reports">
+            <div class="dash-sec-head">
+              <div><h2>Reports &amp; Analytics</h2><p>Monthly volume, department share and exportable summaries.</p></div>
+              <span class="pill is-green">Live</span>
+            </div>
+            <div class="kpi-strip">
+              <article class="stat-card"><div class="stat-card__top"><span class="stat-card__label">Total Grievances</span></div><div class="stat-card__mid"><span class="stat-card__value"><span class="counter" data-target="312">312</span></span></div><p class="stat-card__foot">Last 6 months</p></article>
+              <article class="stat-card"><div class="stat-card__top"><span class="stat-card__label">Resolved</span></div><div class="stat-card__mid"><span class="stat-card__value"><span class="counter" data-target="181">181</span></span></div><p class="stat-card__foot">58% of total</p></article>
+              <article class="stat-card"><div class="stat-card__top"><span class="stat-card__label">Avg. Days</span></div><div class="stat-card__mid"><span class="stat-card__value"><span class="counter" data-target="3.2" data-decimals="1">3.2</span></span></div><p class="stat-card__foot">Resolution time</p></article>
+              <article class="stat-card"><div class="stat-card__top"><span class="stat-card__label">SLA Compliance</span></div><div class="stat-card__mid"><span class="stat-card__value"><span class="counter" data-target="94">94</span>%</span></div><p class="stat-card__foot">Against target</p></article>
+            </div>
+            <div class="chart-grid chart-grid--a">
+              <article class="chart-card">
+                <div class="chart-card__head"><h3>Monthly Grievance Volume</h3></div>
+                <div class="chart" id="chartMonthly" role="img" aria-label="Line chart of monthly grievance volume: May 120, June 138, July 126, August 160, September 142, October 171."></div>
+              </article>
+              <article class="chart-card">
+                <div class="chart-card__head"><h3>Department Share</h3></div>
+                <div class="donut-wrap">
+                  <div class="chart" id="chartDeptShare" role="img" aria-label="Donut chart of department share: Direct Taxes 34 percent, Railways 26 percent, Posts 20 percent, Telecom 12 percent, Agriculture 8 percent."></div>
+                  <div class="chart-legend" id="legendDeptShare"></div>
+                </div>
+              </article>
+            </div>
+            <div class="export-row">
+              <button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button" data-export="csv">Export CSV</button>
+              <button onclick="window.location.href='404.html'" class="dbtn" type="button" data-export="pdf">Export PDF</button>
+              <span class="pill is-lav">Demo export • no download</span>
+            </div>
+          </section>
+
+          <!-- ============ NOTIFICATIONS ============ -->
+          <section class="view" id="view-notifications" data-view="notifications">
+            <div class="dash-sec-head">
+              <div><h2>Notifications</h2><p>System alerts, SLA reminders and assignment updates.</p></div>
+              <button onclick="window.location.href='404.html'" class="dbtn is-navy" type="button" id="markAllRead">Mark all read</button>
+            </div>
+            <div class="dcard" style="padding:0">
+              <div class="notif"><span class="notif__icon is-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M12 4 2.5 20h19L12 4Z" /><path d="M12 10v4M12 17h.01" /></svg></span><div class="notif__body"><strong>3 grievances breaching SLA</strong><p>Escalation recommended for Railways and Direct Taxes tickets.</p><small>10 minutes ago</small></div><span class="notif__dot"></span></div>
+              <div class="notif"><span class="notif__icon is-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m9 12 2 2 4-4" /></svg></span><div class="notif__body"><strong>12 new verifications assigned</strong><p>Citizen document verification queue updated.</p><small>42 minutes ago</small></div><span class="notif__dot"></span></div>
+              <div class="notif"><span class="notif__icon is-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="m5 13 4 4L19 7" /></svg></span><div class="notif__body"><strong>ATR accepted by citizen</strong><p>Grievance PMOPG/E/2024/0032011 closed successfully.</p><small>2 hours ago</small></div><span class="notif__dot"></span></div>
+              <div class="notif"><span class="notif__icon is-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg></span><div class="notif__body"><strong>Daily digest ready</strong><p>Your department performance summary for yesterday.</p><small>6 hours ago</small></div><span class="notif__dot"></span></div>
+              <div class="notif is-read"><span class="notif__icon is-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M4 19V5M4 19h17M8 16v-4M12 16V8M16 16v-6" /></svg></span><div class="notif__body"><strong>Weekly analytics published</strong><p>Grievance resolution rate improved by 4.1%.</p><small>Yesterday</small></div><span class="notif__dot"></span></div>
+            </div>
+          </section>
+
+          <!-- ============ PROFILE ============ -->
+          <section class="view" id="view-profile" data-view="profile">
+            <div class="dash-sec-head"><div><h2>Official Profile</h2><p>Update your official identity and posting details.</p></div></div>
+            <div class="dcard">
+              <form class="dform" id="officialForm">
+                <label class="dfield"><span>Full Name</span><input type="text" id="ofName" value="Shri V. Sridhar, IRS"></label>
+                <label class="dfield"><span>Designation</span><input type="text" id="ofDesignation" value="Joint Commissioner (Grievance)"></label>
+                <label class="dfield"><span>Department</span>
+                  <select id="ofDepartment">
+                    <option>Central Board of Direct Taxes</option><option>Indian Railways</option><option>Department of Posts</option><option>Department of Telecommunications</option><option>Ministry of Agriculture &amp; Farmers Welfare</option>
+                  </select>
+                </label>
+                <label class="dfield"><span>Employee ID</span><input type="text" id="ofEmployee" value="GOI-IRS-2291" readonly></label>
+                <label class="dfield"><span>Cadre / State</span>
+                  <select id="ofState">
+                    <option>Delhi NCT</option><option>Maharashtra</option><option>Karnataka</option><option>Tamil Nadu</option><option>Uttar Pradesh</option>
+                  </select>
+                </label>
+                <div class="dform__actions">
+                  <button onclick="window.location.href='404.html'" class="dbtn is-navy" type="submit">Save Changes</button>
+                  <span class="dform__note" id="officialSaved" hidden>Profile updated successfully.</span>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <!-- ============ SETTINGS ============ -->
+          <section class="view" id="view-settings" data-view="settings">
+            <div class="dash-sec-head"><div><h2>Settings</h2><p>Alerting, SLA reminders and delegation preferences.</p></div></div>
+            <div class="dcard">
+              <div class="toggle-row">
+                <div class="toggle-row__text"><strong>Email Alerts</strong><small>Receive assignment and SLA breach emails.</small></div>
+                <label class="toggle"><input type="checkbox" checked><span></span></label>
+              </div>
+              <div class="toggle-row">
+                <div class="toggle-row__text"><strong>SLA Reminders</strong><small>Remind 5 days before the 30-day SLA deadline.</small></div>
+                <label class="toggle"><input type="checkbox" checked><span></span></label>
+              </div>
+              <div class="toggle-row">
+                <div class="toggle-row__text"><strong>Two-Factor Authentication</strong><small>Require OTP for official console sign-in.</small></div>
+                <label class="toggle"><input type="checkbox" checked><span></span></label>
+              </div>
+              <div class="toggle-row">
+                <div class="toggle-row__text"><strong>Delegate Approvals</strong><small>Allow senior officers to act on your queue.</small></div>
+                <label class="toggle"><input type="checkbox"><span></span></label>
+              </div>
+            </div>
+            <div class="dcard" style="margin-top:18px">
+              <div class="dash-sec-head" style="margin-bottom:12px"><div><h3 style="margin:0;color:#0B1B33;font-weight:800">Default Department</h3></div></div>
+              <label class="dfield" style="max-width:420px"><span>Department</span>
+                <select><option>Central Board of Direct Taxes</option><option>Indian Railways</option><option>Department of Posts</option><option>Department of Telecommunications</option></select>
+              </label>
+            </div>
+            <div class="dcard" style="margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+              <div class="toggle-row__text"><strong>Sign out of Official Console</strong><small>End this session on the current device.</small></div>
+              <button onclick="window.location.href='404.html'" class="dbtn is-brand" type="button" id="settingsLogout">Sign Out</button>
+            </div>
+          </section>
+
+        </main>
+      </div>
+    </div>
+  </main>
+
+<div class="accessibility-tools">
+    <button class="floating-tool" type="button" data-a11y-trigger aria-expanded="false" aria-controls="a11y-panel" aria-label="Open accessibility options">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2" /><path d="M5 9h14M12 9v10M8.5 20l3.5-6 3.5 6" /></svg>
+      <span>Accessibility</span>
+    </button>
+    <div class="a11y-panel" id="a11y-panel" hidden>
+      <strong>Accessibility options</strong>
+      <button type="button" data-a11y-action="contrast">Increase contrast</button>
+      <button type="button" data-a11y-action="text">Larger text</button>
+      <button type="button" data-a11y-action="reset">Reset view</button>
+    </div>
+  </div>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6" /></svg>
+  </button>
+
+  <script src="js/government-dashboard.js" defer></script>
+</body>
+</html>

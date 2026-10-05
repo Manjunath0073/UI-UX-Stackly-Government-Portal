@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Comprehensive directory and civic performance monitor for all Union Ministries, Executive Departments, and Apex Commissions.">
+  <title>Stackly | Ministries &amp; Departments Directory</title>
+  <link rel="stylesheet" href="css/ministries.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="utility-bar">
+      <div class="header-container utility-content">
+        <div class="utility-primary">
+          <div class="utility-identity">
+            <span class="utility-status-dot" aria-hidden="true"></span>
+            <span class="utility-stack"><span lang="hi">भारत सरकार</span><span>Government of India</span></span>
+          </div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <div class="utility-detail"><span>Ministry of Electronics &amp;</span><span>Information Technology (MeitY)</span></div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <div class="utility-detail"><span>Digital India</span><span>Initiative</span></div>
+        </div>
+
+        <div class="utility-right">
+          <div class="font-size-control" role="group" aria-label="Text size">
+            <button type="button" data-font-size="sm" aria-label="Decrease text size">A-</button>
+            <button type="button" data-font-size="md" aria-label="Reset text size">A</button>
+            <button type="button" data-font-size="lg" aria-label="Increase text size">A+</button>
+          </div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <button class="utility-tool" type="button" aria-label="Increase contrast">
+            <svg class="utility-icon contrast-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16Z" fill="currentColor" stroke="none" /><path d="M12 4a8 8 0 0 1 0 16Z" fill="var(--navy-900)" stroke="none" /></svg>
+            <span>Contrast</span>
+          </button>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <button class="utility-tool utility-screen-reader" type="button" aria-label="Screen reader support">
+            <svg class="utility-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.5" /><path d="M5 9h14M12 9v10M8.5 20l3.5-6 3.5 6" /></svg>
+            <span>Screen<br>Reader</span>
+          </button>
+          <div class="language-control">
+            <button class="language-selector" id="language-selector" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-menu">
+              <svg class="utility-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h11M9.5 5v2M6 5c.8 3.4 2.5 5.8 5.1 7.4M6.5 10.5c2.3-.9 4.3-2.5 5.8-4.7" /><circle cx="16.5" cy="15.5" r="4.5" /><path d="M12 15.5h9M16.5 11c1.2 1.3 1.8 2.8 1.8 4.5s-.6 3.2-1.8 4.5c-1.2-1.3-1.8-2.8-1.8-4.5s.6-3.2 1.8-4.5Z" /></svg>
+              <span class="language-copy"><span>Language: English</span><span lang="hi">(हिन्दी)</span></span>
+              <svg class="language-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+            </button>
+            <div class="language-menu" id="language-menu" role="listbox" aria-label="Choose language" hidden>
+              <button type="button" role="option" aria-selected="true" data-language="English">English</button>
+              <button type="button" role="option" aria-selected="false" data-language="Hindi">हिन्दी</button>
+              <button type="button" role="option" aria-selected="false" data-language="Tamil">தமிழ்</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-bar">
+      <div class="header-container main-bar-inner">
+        <a class="header-brand" href="/" aria-label="Stackly home">
+          <img class="header-brand-logo" src="assets/logo/logo-stackly.webp" alt="Stackly" width="150" height="36">
+        </a>
+        <form class="site-search" role="search" action="#top">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+          <label class="sr-only" for="site-header-search">Search citizen services</label>
+          <input id="site-header-search" type="search" placeholder="Search 36 States &amp; UT portals, licenses, welfare schemes..." autocomplete="off">
+        </form>
+        <a class="btn-login" href="login.html">
+          <svg class="login-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg>
+          <span>MeriPehchaan Login</span>
+        </a>
+        <button class="header-menu-toggle" type="button" aria-label="Open primary navigation" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <div class="header-container primary-nav-inner">
+        <button class="header-drawer-close" type="button" aria-label="Close primary navigation" data-header-close>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+          <span>Menu</span>
+        </button>
+        <a class="nav-item" href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m4 11 8-7 8 7M6.5 9.5V20h11V9.5M10 20v-5h4v5" /></svg><span>Home</span></a>
+        <a class="nav-item" href="services.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1" /><rect x="14" y="4" width="6" height="6" rx="1" /><rect x="4" y="14" width="6" height="6" rx="1" /><rect x="14" y="14" width="6" height="6" rx="1" /></svg><span>All Services</span></a>
+        <a class="nav-item is-active" href="ministries.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-5h6v5M9 10h.01M15 10h.01" /></svg><span>Ministries</span></a>
+        <a class="nav-item" href="state-portal.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5zM8 8h8M8 12h5M8 16h3" /></svg><span>State Portals</span></a>
+        <a class="nav-item" href="digilocker.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1" /></svg><span>DigiLocker</span></a>
+        <a class="nav-item" href="grievance.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><path d="M4.5 19c.6-3.2 2.1-5 4.5-5s3.9 1.8 4.5 5M15 10a4 4 0 0 1 4 4v2M18 10h1.5A2.5 2.5 0 0 1 22 14.5V16h-3" /></svg><span>Grievance (CPGRAMS)</span></a>
+        <a class="nav-item" href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h17M8 16v-4M12 16V8M16 16v-6M20 16v-9" /></svg><span>Dashboard</span></a>
+        <a class="drawer-login" href="login.html">MeriPehchaan Login</a>
+      </div>
+    </nav>
+    <div class="header-drawer-backdrop" data-header-close hidden></div>
+  </header>
+
+  <main id="main-content">
+    <section class="min-hero" id="top" aria-labelledby="min-hero-title">
+      <div class="container">
+        <div class="min-hero__panel">
+          <div class="min-hero__content">
+            <span class="min-hero__badge"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2" /><circle cx="18" cy="6" r="2" /><circle cx="12" cy="18" r="2" /><path d="M6 8v6a4 4 0 0 0 4 4h4M18 8v2a4 4 0 0 1-4 4h-4" /></svg>Central Government Administrative Apparatus</span>
+            <h1 id="min-hero-title" class="min-hero__title">Ministries &amp; Departments Directory</h1>
+            <p class="min-hero__sub">Comprehensive directory and civic performance monitor for all Union Ministries, Executive Departments, and Apex Commissions serving 1.4 billion citizens across the Republic of India.</p>
+
+            <div class="min-hero__stats">
+              <div class="min-stat">
+                <span class="min-stat__label">Total Ministries</span>
+                <span class="min-stat__value"><span class="counter" data-target="54" data-decimals="0">54</span></span>
+                <span class="min-stat__foot is-green">Union Portfolios</span>
+              </div>
+              <div class="min-stat">
+                <span class="min-stat__label">Executive Depts</span>
+                <span class="min-stat__value"><span class="counter" data-target="93" data-decimals="0">93</span></span>
+                <span class="min-stat__foot is-green">Operating Directorates</span>
+              </div>
+              <div class="min-stat">
+                <span class="min-stat__label">Online Services</span>
+                <span class="min-stat__value"><span class="counter" data-target="2840" data-decimals="0">2,840</span>+</span>
+                <span class="min-stat__foot">JanSeva Endpoints</span>
+              </div>
+              <div class="min-stat">
+                <span class="min-stat__label">Disposal SLA</span>
+                <span class="min-stat__value is-amber"><span class="counter" data-target="94.8" data-decimals="1">94.8</span>%</span>
+                <span class="min-stat__foot">CPGRAMS Audit</span>
+              </div>
+            </div>
+
+            <form class="min-hero__search" role="search" action="#top">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+              <input type="search" placeholder="Search by ministry name, Union Minister, policy domain, or portal" autocomplete="off">
+              <button onclick="window.location.href='404.html'; return false;" class="btn-find-ministry" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0" /><circle cx="16" cy="6" r="2" /><circle cx="10" cy="12" r="2" /><circle cx="18" cy="18" r="2" /></svg>Find Ministry</button>
+            </form>
+          </div>
+
+          <div class="min-hero__media">
+            <!-- TODO: swap with final compressed webp -->
+            <img src="assets/img/ministries/ministries.jpg" alt="Central ministries and departments unified executive directory illustration" width="900" height="620">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portals">
+      <div class="container">
+        <header class="portals__head">
+          <div>
+            <h2 class="portals__title">Key Featured Cabinet Portals</h2>
+            <p class="portals__sub">High-volume central civic gateways powering national public digital infrastructure</p>
+          </div>
+          <a class="portals__all" href="#top">View All 54 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+        </header>
+
+        <div class="portals__grid">
+          <article class="portal-card">
+            <div class="portal-card__top">
+              <span class="portal-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="12" rx="2" /><path d="M9 20h6M12 16v4" /></svg></span>
+              <span class="portal-card__sla">97.4% SLA</span>
+            </div>
+            <h3 class="portal-card__name">MeitY</h3>
+            <p class="portal-card__desc">Electronics &amp; Information Technology</p>
+            <hr class="portal-card__divider">
+            <div class="portal-card__foot">
+              <span class="portal-card__count">182 Services</span>
+              <a class="portal-card__open" href="404.html">Open <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+          <article class="portal-card">
+            <div class="portal-card__top">
+              <span class="portal-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15h16l-1.5-5h-4L13 7H8L6 10H4zM6 15v3M18 15v3M7 18h3M14 18h3" /></svg></span>
+              <span class="portal-card__sla">96.1% SLA</span>
+            </div>
+            <h3 class="portal-card__name">MoRTH</h3>
+            <p class="portal-card__desc">Road Transport &amp; Highways</p>
+            <hr class="portal-card__divider">
+            <div class="portal-card__foot">
+              <span class="portal-card__count">94 Services</span>
+              <a class="portal-card__open" href="404.html">Open <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+          <article class="portal-card">
+            <div class="portal-card__top">
+              <span class="portal-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" /><path d="M9.3 8h5.6M9.3 12h4.2M9.3 16h3" /></svg></span>
+              <span class="portal-card__sla">95.3% SLA</span>
+            </div>
+            <h3 class="portal-card__name">MoF</h3>
+            <p class="portal-card__desc">Ministry of Finance</p>
+            <hr class="portal-card__divider">
+            <div class="portal-card__foot">
+              <span class="portal-card__count">246 Services</span>
+              <a class="portal-card__open" href="404.html">Open <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+          <article class="portal-card">
+            <div class="portal-card__top">
+              <span class="portal-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="M12 8v5M9.5 10.5h5" /></svg></span>
+              <span class="portal-card__sla">98.2% SLA</span>
+            </div>
+            <h3 class="portal-card__name">MoHFW</h3>
+            <p class="portal-card__desc">Health &amp; Family Welfare</p>
+            <hr class="portal-card__divider">
+            <div class="portal-card__foot">
+              <span class="portal-card__count">118 Services</span>
+              <a class="portal-card__open" href="404.html">Open <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+          <article class="portal-card">
+            <div class="portal-card__top">
+              <span class="portal-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" /><path d="M3.8 12h16.4M12 3.5c2.1 2.3 3.2 5.1 3.2 8.5s-1.1 6.2-3.2 8.5c-2.1-2.3-3.2-5.1-3.2-8.5S9.9 5.8 12 3.5Z" /></svg></span>
+              <span class="portal-card__sla">99.1% SLA</span>
+            </div>
+            <h3 class="portal-card__name">MEA</h3>
+            <p class="portal-card__desc">Ministry of External Affairs</p>
+            <hr class="portal-card__divider">
+            <div class="portal-card__foot">
+              <span class="portal-card__count">76 Services</span>
+              <a class="portal-card__open" href="404.html">Open <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="charter">
+      <div class="container">
+        <div class="charter__card">
+          <div class="charter__media">
+            <!-- TODO: swap with final compressed webp -->
+            <img src="assets/img/ministries/img2.png" alt="Government performance and statutory delivery dashboard" loading="lazy" decoding="async" width="900" height="620">
+          </div>
+
+          <div class="charter__content">
+            <span class="charter__badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.5 2.5 2.8.4-.8 2.7 1.9 2-1.9 2 .8 2.7-2.8.4L12 18l-1.5-2.3-2.8-.4.8-2.7-1.9-2 1.9-2-.8-2.7 2.8-.4L12 3Z" /><circle cx="12" cy="10.6" r="2.2" /></svg>Citizen Charter &amp; SLA Benchmarks</span>
+            <h2 class="charter__title">Statutory Citizen Charter &amp; Real-Time Performance Benchmarks</h2>
+            <p class="charter__sub">Monitoring governance efficiency, grievance redressal turnaround, and faceless service delivery across all 54 Union Ministries under the Government of India Accountability Framework.</p>
+
+            <div class="charter__stats">
+              <div class="charter-stat">
+                <div class="charter-stat__head">
+                  <span class="charter-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /><circle cx="12" cy="12" r="8.5" /></svg></span>
+                  <span class="charter-stat__value">94.8%</span>
+                  <span class="tag tag--green">CPGRAMS 7.0</span>
+                </div>
+                <p>Average resolution in 14 days with direct citizen satisfaction audit.</p>
+              </div>
+
+              <div class="charter-stat">
+                <div class="charter-stat__head">
+                  <span class="charter-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg></span>
+                  <span class="charter-stat__value">100%</span>
+                  <span class="tag tag--green">E-OFFICE 7.0</span>
+                </div>
+                <p>Adopted across 54 ministries with zero physical paper file movement.</p>
+              </div>
+
+              <div class="charter-stat">
+                <div class="charter-stat__head">
+                  <span class="charter-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2" /><circle cx="5" cy="19" r="2" /><circle cx="19" cy="19" r="2" /><path d="M12 7v5l5 5M12 12l-5 5" /></svg></span>
+                  <span class="charter-stat__value">2,840+</span>
+                  <span class="tag tag--amber">FEDERATED</span>
+                </div>
+                <p>API-enabled digital public services linked to MeriPehchaan &amp; DigiLocker.</p>
+              </div>
+
+              <div class="charter-stat">
+                <div class="charter-stat__head">
+                  <span class="charter-stat__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14M8 20l-1-7 5-3 5 3-1 7M9 7 5 10M13 10l3 2M12 3l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2Z" /></svg></span>
+                  <span class="charter-stat__value">Statutory</span>
+                  <span class="tag tag--lav">GUARANTEED</span>
+                </div>
+                <p>Time-bound citizen charter guarantee with penalty-backed entitlements.</p>
+              </div>
+            </div>
+
+            <div class="charter__actions">
+              <a class="btn-charter-solid" href="404.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h17M8 16v-4M12 16V8M16 16v-6M20 16v-9" /></svg>View National Governance Dashboard</a>
+              <a class="btn-charter-soft" href="404.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 19h16" /></svg>Download Annual Citizen Charter (PDF)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mdir">
+      <div class="container">
+        <div class="mdir__tabs" role="tablist" aria-label="Directory categories">
+          <button class="mdir-tab is-active" type="button" role="tab" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1" /><rect x="14" y="4" width="6" height="6" rx="1" /><rect x="4" y="14" width="6" height="6" rx="1" /><rect x="14" y="14" width="6" height="6" rx="1" /></svg>Central Ministries &amp; Departments <span class="mdir-tab__count">54</span></button>
+          <button class="mdir-tab" type="button" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21h16M6 21V8l6-4 6 4v13M9 21v-5h6v5" /><path d="M9 10h.01M12 10h.01M15 10h.01" /></svg>Apex Autonomous Bodies &amp; Councils <span class="mdir-tab__count">38</span></button>
+          <button class="mdir-tab" type="button" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-5h6v5" /></svg>Constitutional &amp; Statutory Commissions <span class="mdir-tab__count">19</span></button>
+        </div>
+
+        <div class="mdir__grid">
+          <article class="mcard">
+            <div class="mcard__top">
+              <span class="mcard__id">ID: M-031 &bull; Cabinet Portfolio</span>
+              <span class="mcard__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="12" rx="2" /><path d="M9 20h6M12 16v4" /></svg></span>
+            </div>
+            <h3 class="mcard__title">Ministry of Electronics &amp; Information Technology (MeitY)</h3>
+            <div class="mcard__info">
+              <span class="label">Union Cabinet Minister</span>
+              <span class="name">Shri Ashwini Vaishnaw</span>
+              <hr>
+              <span class="label">Minister of State (MOS)</span>
+              <span class="name">Shri Jitin Prasada</span>
+            </div>
+            <span class="mcard__platforms-label">Key Platforms</span>
+            <div class="mcard__chips">
+              <span class="mchip">DigiLocker</span><span class="mchip">UMANG</span><span class="mchip">Aadhaar (UIDAI)</span><span class="mchip">IndiaStack</span>
+            </div>
+            <div class="mcard__stats">
+              <div class="mstat"><span class="mstat__label">Live Services</span><span class="mstat__value">182 <small>Active</small></span></div>
+              <div class="mstat"><span class="mstat__label">Disposal SLA</span><span class="mstat__value is-green">97.4%</span></div>
+            </div>
+            <div class="mcard__foot">
+              <a class="mcard__portal" href="#top">Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+              <button onclick="window.location.href='404.html'" class="btn-janseva" type="button">JanSeva <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+            </div>
+          </article>
+
+          <article class="mcard">
+            <div class="mcard__top">
+              <span class="mcard__id">ID: M-042 &bull; Cabinet Portfolio</span>
+              <span class="mcard__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15h16l-1.5-5h-4L13 7H8L6 10H4zM6 15v3M18 15v3M7 18h3M14 18h3" /></svg></span>
+            </div>
+            <h3 class="mcard__title">Ministry of Road Transport &amp; Highways (MoRTH)</h3>
+            <div class="mcard__info">
+              <span class="label">Union Cabinet Minister</span>
+              <span class="name">Shri Nitin Jairam Gadkari</span>
+              <hr>
+              <span class="label">Minister of State (MOS)</span>
+              <span class="name">Shri Harsh Malhotra</span>
+            </div>
+            <span class="mcard__platforms-label">Key Platforms</span>
+            <div class="mcard__chips">
+              <span class="mchip">Parivahan Sewa</span><span class="mchip">Sarathi (DL)</span><span class="mchip">Vahan (RC)</span><span class="mchip">FASTag NETC</span>
+            </div>
+            <div class="mcard__stats">
+              <div class="mstat"><span class="mstat__label">Live Services</span><span class="mstat__value">94 <small>Active</small></span></div>
+              <div class="mstat"><span class="mstat__label">Disposal SLA</span><span class="mstat__value is-green">96.1%</span></div>
+            </div>
+            <div class="mcard__foot">
+              <a class="mcard__portal" href="#top">Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+              <button onclick="window.location.href='404.html'" class="btn-janseva" type="button">JanSeva <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+            </div>
+          </article>
+
+          <article class="mcard">
+            <div class="mcard__top">
+              <span class="mcard__id">ID: M-018 &bull; Cabinet Portfolio</span>
+              <span class="mcard__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="12" rx="2" /><path d="M9 9h6M9 12h4" /></svg></span>
+            </div>
+            <h3 class="mcard__title">Ministry of Finance (MoF)</h3>
+            <div class="mcard__info">
+              <span class="label">Union Cabinet Minister</span>
+              <span class="name">Smt. Nirmala Sitharaman</span>
+              <hr>
+              <span class="label">Minister of State (MOS)</span>
+              <span class="name">Shri Pankaj Chaudhary</span>
+            </div>
+            <span class="mcard__platforms-label">Key Platforms</span>
+            <div class="mcard__chips">
+              <span class="mchip">GSTN Portal</span><span class="mchip">e-Filing (ITR)</span><span class="mchip">PFMS</span><span class="mchip">Jan Samarth</span>
+            </div>
+            <div class="mcard__stats">
+              <div class="mstat"><span class="mstat__label">Live Services</span><span class="mstat__value">246 <small>Active</small></span></div>
+              <div class="mstat"><span class="mstat__label">Disposal SLA</span><span class="mstat__value is-green">95.3%</span></div>
+            </div>
+            <div class="mcard__foot">
+              <a class="mcard__portal" href="#top">Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+              <button onclick="window.location.href='404.html'" class="btn-janseva" type="button">JanSeva <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+            </div>
+          </article>
+
+          <article class="mcard">
+            <div class="mcard__top">
+              <span class="mcard__id">ID: M-023 &bull; Cabinet Portfolio</span>
+              <span class="mcard__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="M12 8v5M9.5 10.5h5" /></svg></span>
+            </div>
+            <h3 class="mcard__title">Ministry of Health &amp; Family Welfare (MoHFW)</h3>
+            <div class="mcard__info">
+              <span class="label">Union Cabinet Minister</span>
+              <span class="name">Shri J.P. Nadda</span>
+              <hr>
+              <span class="label">Minister of State (MOS)</span>
+              <span class="name">Smt. Anupriya Patel</span>
+            </div>
+            <span class="mcard__platforms-label">Key Platforms</span>
+            <div class="mcard__chips">
+              <span class="mchip">e-Hospital</span><span class="mchip">CoWIN</span><span class="mchip">ABHA (ABDM)</span><span class="mchip">e-Sanjeevani</span>
+            </div>
+            <div class="mcard__stats">
+              <div class="mstat"><span class="mstat__label">Live Services</span><span class="mstat__value">118 <small>Active</small></span></div>
+              <div class="mstat"><span class="mstat__label">Disposal SLA</span><span class="mstat__value is-green">98.2%</span></div>
+            </div>
+            <div class="mcard__foot">
+              <a class="mcard__portal" href="#top">Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+              <button onclick="window.location.href='404.html'" class="btn-janseva" type="button">JanSeva <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+            </div>
+          </article>
+
+          <article class="mcard">
+            <div class="mcard__top">
+              <span class="mcard__id">ID: M-015 &bull; Cabinet Portfolio</span>
+              <span class="mcard__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" /><path d="M3.8 12h16.4M12 3.5c2.1 2.3 3.2 5.1 3.2 8.5s-1.1 6.2-3.2 8.5c-2.1-2.3-3.2-5.1-3.2-8.5S9.9 5.8 12 3.5Z" /></svg></span>
+            </div>
+            <h3 class="mcard__title">Ministry of External Affairs (MEA)</h3>
+            <div class="mcard__info">
+              <span class="label">Union Cabinet Minister</span>
+              <span class="name">Dr. S. Jaishankar</span>
+              <hr>
+              <span class="label">Minister of State (MOS)</span>
+              <span class="name">Shri Kirti Vardhan Singh</span>
+            </div>
+            <span class="mcard__platforms-label">Key Platforms</span>
+            <div class="mcard__chips">
+              <span class="mchip">Passport Seva</span><span class="mchip">MADAD Portal</span><span class="mchip">e-Migrate</span><span class="mchip">e-Sanad</span>
+            </div>
+            <div class="mcard__stats">
+              <div class="mstat"><span class="mstat__label">Live Services</span><span class="mstat__value">76 <small>Active</small></span></div>
+              <div class="mstat"><span class="mstat__label">Disposal SLA</span><span class="mstat__value is-green">99.1%</span></div>
+            </div>
+            <div class="mcard__foot">
+              <a class="mcard__portal" href="#top">Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+              <button onclick="window.location.href='404.html'" class="btn-janseva" type="button">JanSeva <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+            </div>
+          </article>
+
+          <article class="mcard">
+            <div class="mcard__top">
+              <span class="mcard__id">ID: M-039 &bull; Cabinet Portfolio</span>
+              <span class="mcard__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3.5" width="16" height="6" rx="2" /><circle cx="7.5" cy="16.5" r="1.8" /><circle cx="16.5" cy="16.5" r="1.8" /><path d="M4 13h16M6 13v2.5M18 13v2.5M8 13v3M16 13v3" /></svg></span>
+            </div>
+            <h3 class="mcard__title">Ministry of Railways (MoR)</h3>
+            <div class="mcard__info">
+              <span class="label">Union Cabinet Minister</span>
+              <span class="name">Shri Ashwini Vaishnaw</span>
+              <hr>
+              <span class="label">Minister of State (MOS)</span>
+              <span class="name">Shri V. Somanna</span>
+            </div>
+            <span class="mcard__platforms-label">Key Platforms</span>
+            <div class="mcard__chips">
+              <span class="mchip">IRCTC NextGen</span><span class="mchip">RailMadad</span><span class="mchip">UTS on Mobile</span><span class="mchip">FOIS Freight</span>
+            </div>
+            <div class="mcard__stats">
+              <div class="mstat"><span class="mstat__label">Live Services</span><span class="mstat__value">164 <small>Active</small></span></div>
+              <div class="mstat"><span class="mstat__label">Disposal SLA</span><span class="mstat__value is-green">98.9%</span></div>
+            </div>
+            <div class="mcard__foot">
+              <a class="mcard__portal" href="#top">Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+              <button onclick="window.location.href='404.html'" class="btn-janseva" type="button">JanSeva <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+            </div>
+          </article>
+
+          <article class="mcard">
+            <div class="mcard__top">
+              <span class="mcard__id">ID: M-012 &bull; Cabinet Portfolio</span>
+              <span class="mcard__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 9.5 8.5-4.5 8.5 4.5-8.5 4.5-8.5-4.5Z" /><path d="M6.5 12.5v3.2c0 1.2 2.5 2.3 5.5 2.3s5.5-1.1 5.5-2.3v-3.2M20.5 10.2v4" /></svg></span>
+            </div>
+            <h3 class="mcard__title">Ministry of Education (MoE)</h3>
+            <div class="mcard__info">
+              <span class="label">Union Cabinet Minister</span>
+              <span class="name">Shri Dharmendra Pradhan</span>
+              <hr>
+              <span class="label">Minister of State (MOS)</span>
+              <span class="name">Shri Jayant Chaudhary, Dr. Sukanta Majumdar</span>
+            </div>
+            <span class="mcard__platforms-label">Key Platforms</span>
+            <div class="mcard__chips">
+              <span class="mchip">NSP Portal</span><span class="mchip">SWAYAM</span><span class="mchip">DIKSHA</span><span class="mchip">ABC Credits</span>
+            </div>
+            <div class="mcard__stats">
+              <div class="mstat"><span class="mstat__label">Live Services</span><span class="mstat__value">126 <small>Active</small></span></div>
+              <div class="mstat"><span class="mstat__label">Disposal SLA</span><span class="mstat__value is-green">96.7%</span></div>
+            </div>
+            <div class="mcard__foot">
+              <a class="mcard__portal" href="#top">Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+              <button onclick="window.location.href='404.html'" class="btn-janseva" type="button">JanSeva <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+            </div>
+          </article>
+
+          <article class="mcard">
+            <div class="mcard__top">
+              <span class="mcard__id">ID: M-003 &bull; Cabinet Portfolio</span>
+              <span class="mcard__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15h8v3H5zM13 15v3h4.5a3 3 0 0 0 3-3v-2h-5" /><circle cx="7" cy="18.5" r="1.8" /><circle cx="17.5" cy="18.5" r="1.8" /><path d="M5 15V9h4l2 3h2M5 12h3" /></svg></span>
+            </div>
+            <h3 class="mcard__title">Ministry of Agriculture &amp; Farmers Welfare (MoA&amp;FW)</h3>
+            <div class="mcard__info">
+              <span class="label">Union Cabinet Minister</span>
+              <span class="name">Shri Shivraj Singh Chouhan</span>
+              <hr>
+              <span class="label">Minister of State (MOS)</span>
+              <span class="name">Shri Ram Nath Thakur, Shri Bhagirath Choudhary</span>
+            </div>
+            <span class="mcard__platforms-label">Key Platforms</span>
+            <div class="mcard__chips">
+              <span class="mchip">PM-Kisan</span><span class="mchip">e-NAM</span><span class="mchip">Kisan Suvidha</span><span class="mchip">PMFBY Insurance</span>
+            </div>
+            <div class="mcard__stats">
+              <div class="mstat"><span class="mstat__label">Live Services</span><span class="mstat__value">178 <small>Active</small></span></div>
+              <div class="mstat"><span class="mstat__label">Disposal SLA</span><span class="mstat__value is-green">95.8%</span></div>
+            </div>
+            <div class="mcard__foot">
+              <a class="mcard__portal" href="#top">Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+              <button onclick="window.location.href='404.html'" class="btn-janseva" type="button">JanSeva <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+            </div>
+          </article>
+
+          <article class="mcard">
+            <div class="mcard__top">
+              <span class="mcard__id">ID: M-024 &bull; Cabinet Portfolio</span>
+              <span class="mcard__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /></svg></span>
+            </div>
+            <h3 class="mcard__title">Ministry of Home Affairs (MHA)</h3>
+            <div class="mcard__info">
+              <span class="label">Union Cabinet Minister</span>
+              <span class="name">Shri Amit Shah</span>
+              <hr>
+              <span class="label">Minister of State (MOS)</span>
+              <span class="name">Shri Nityanand Rai, Shri Bandi Sanjay Kumar</span>
+            </div>
+            <span class="mcard__platforms-label">Key Platforms</span>
+            <div class="mcard__chips">
+              <span class="mchip">Cyber Crime Portal</span><span class="mchip">OCI Services</span><span class="mchip">NDMA Disaster</span><span class="mchip">e-FRRO</span>
+            </div>
+            <div class="mcard__stats">
+              <div class="mstat"><span class="mstat__label">Live Services</span><span class="mstat__value">82 <small>Active</small></span></div>
+              <div class="mstat"><span class="mstat__label">Disposal SLA</span><span class="mstat__value is-green">97.1%</span></div>
+            </div>
+            <div class="mcard__foot">
+              <a class="mcard__portal" href="#top">Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+              <button onclick="window.location.href='404.html'" class="btn-janseva" type="button">JanSeva <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sso">
+      <div class="container">
+        <div class="sso__panel">
+          <div class="sso__content">
+            <span class="sso__eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1" /></svg>DigiLocker &amp; MeriPehchaan Federated Ecosystem</span>
+            <h2 class="sso__title">Single-Sign-On Verified Access across all 54 Union Ministries</h2>
+            <p class="sso__sub">Citizens can instantly authenticate with Aadhaar / PAN to auto-fetch credentials, file grievances through CPGRAMS, and track departmental service applications without multiple registrations.</p>
+          </div>
+          <div class="sso__actions">
+            <button onclick="window.location.href='404.html'" class="btn-sso-solid" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1" /></svg>Link DigiLocker Account</button>
+            <button onclick="window.location.href='404.html'" class="btn-sso-soft" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><path d="M4.5 19c.6-3.2 2.1-5 4.5-5s3.9 1.8 4.5 5M15 10a4 4 0 0 1 4 4v2M18 10h1.5A2.5 2.5 0 0 1 22 14.5V16h-3" /></svg>Track CPGRAMS Ticket</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <!-- TODO: replace logo SVG -->
+          <a class="footer__logo" href="/" aria-label="Stackly home">
+            <img src="assets/logo/logo-stackly.webp" alt="Stackly" width="130" height="36">
+          </a>
+          <p class="footer__about">JanSeva is an integrated single-window platform bringing Central, State, and District administrative utilities into a unified, authenticated, and citizen-first digital journey.</p>
+          <div class="footer__accr">
+            <span class="footer__accr-label">Accreditations:</span>
+            <span class="accr-badge">STQC Certified</span>
+            <span class="accr-badge">WCAG 2.2 AAA</span>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Citizen Lifecycle">
+          <h4>Citizen Lifecycle</h4>
+          <ul>
+            <li><a href="404.html">Birth &amp; Child Healthcare</a></li>
+            <li><a href="404.html">Education &amp; Skill Vouchers</a></li>
+            <li><a href="404.html">Employment &amp; Labor Welfare</a></li>
+            <li><a href="404.html">Housing &amp; Land Registry</a></li>
+            <li><a href="404.html">Retirement &amp; Social Pension</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="National Gateways">
+          <h4>National Gateways</h4>
+          <ul>
+            <li><a href="404.html">DigiLocker Ecosystem</a></li>
+            <li><a href="404.html">MyGov Citizen Engagement</a></li>
+            <li><a href="404.html">CPGRAMS Grievance Portal</a></li>
+            <li><a href="404.html">India.gov.in Directory</a></li>
+            <li><a href="404.html">Direct Benefit Transfer (DBT)</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="Governance and Legal">
+          <h4>Governance &amp; Legal</h4>
+          <ul>
+            <li><a href="404.html">RTI Online Portal</a></li>
+            <li><a href="404.html">Data Privacy Policy</a></li>
+            <li><a href="404.html">Terms of Service</a></li>
+            <li><a href="404.html">Hyperlinking Policy</a></li>
+            <li><a href="404.html">Helpdesk &amp; Escalation</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__strip">
+        <span>Emergency: 112</span><i></i>
+        <span>Cyber Helpline: 1930</span><i></i>
+        <span>Health: 1075</span><i></i>
+        <span>RTI Online</span><i></i>
+        <span class="is-strong">STQC Certified</span><i></i>
+        <span class="is-strong">WCAG 2.2 AAA Compliant</span><i></i>
+        <span>Terms of Service</span><i></i>
+        <span>Privacy Policy</span><i></i>
+        <span>Helpdesk</span>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__credit">Designed, developed and hosted by National Informatics Centre (NIC), Ministry of Electronics &amp; Information Technology, Government of India.</p>
+        <div class="footer__meta">
+          <span>Last Updated: 24 Oct 2024</span><i></i>
+          <span class="footer__safe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg>Cyber Safe Verified</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="accessibility-tools">
+    <button class="floating-tool" type="button" data-a11y-trigger aria-expanded="false" aria-controls="a11y-panel" aria-label="Open accessibility options">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2" /><path d="M5 9h14M12 9v10M8.5 20l3.5-6 3.5 6" /></svg>
+      <span>Accessibility</span>
+    </button>
+    <div class="a11y-panel" id="a11y-panel" hidden>
+      <strong>Accessibility options</strong>
+      <button type="button" data-a11y-action="contrast">Increase contrast</button>
+      <button type="button" data-a11y-action="text">Larger text</button>
+      <button type="button" data-a11y-action="reset">Reset view</button>
+    </div>
+  </div>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6" /></svg>
+  </button>
+
+  <script src="js/ministries.js" defer></script>
+</body>
+</html>

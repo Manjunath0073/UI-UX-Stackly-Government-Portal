@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the official national directory of 3,820+ government services across India.">
+  <title>Stackly | Explore 3,820+ Government Services Across India</title>
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="utility-bar">
+      <div class="header-container utility-content">
+        <div class="utility-primary">
+          <div class="utility-identity">
+            <span class="utility-status-dot" aria-hidden="true"></span>
+            <span class="utility-stack"><span lang="hi">भारत सरकार</span><span>Government of India</span></span>
+          </div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <div class="utility-detail"><span>Ministry of Electronics &amp;</span><span>Information Technology (MeitY)</span></div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <div class="utility-detail"><span>Digital India</span><span>Initiative</span></div>
+        </div>
+
+        <div class="utility-right">
+          <div class="font-size-control" role="group" aria-label="Text size">
+            <button type="button" data-font-size="sm" aria-label="Decrease text size">A-</button>
+            <button type="button" data-font-size="md" aria-label="Reset text size">A</button>
+            <button type="button" data-font-size="lg" aria-label="Increase text size">A+</button>
+          </div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <button class="utility-tool" type="button" aria-label="Increase contrast">
+            <svg class="utility-icon contrast-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16Z" fill="currentColor" stroke="none" /><path d="M12 4a8 8 0 0 1 0 16Z" fill="var(--navy-900)" stroke="none" /></svg>
+            <span>Contrast</span>
+          </button>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <button class="utility-tool utility-screen-reader" type="button" aria-label="Screen reader support">
+            <svg class="utility-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.5" /><path d="M5 9h14M12 9v10M8.5 20l3.5-6 3.5 6" /></svg>
+            <span>Screen<br>Reader</span>
+          </button>
+          <div class="language-control">
+            <button class="language-selector" id="language-selector" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-menu">
+              <svg class="utility-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h11M9.5 5v2M6 5c.8 3.4 2.5 5.8 5.1 7.4M6.5 10.5c2.3-.9 4.3-2.5 5.8-4.7" /><circle cx="16.5" cy="15.5" r="4.5" /><path d="M12 15.5h9M16.5 11c1.2 1.3 1.8 2.8 1.8 4.5s-.6 3.2-1.8 4.5c-1.2-1.3-1.8-2.8-1.8-4.5s.6-3.2 1.8-4.5Z" /></svg>
+              <span class="language-copy"><span>Language: English</span><span lang="hi">(हिन्दी)</span></span>
+              <svg class="language-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+            </button>
+            <div class="language-menu" id="language-menu" role="listbox" aria-label="Choose language" hidden>
+              <button type="button" role="option" aria-selected="true" data-language="English">English</button>
+              <button type="button" role="option" aria-selected="false" data-language="Hindi">हिन्दी</button>
+              <button type="button" role="option" aria-selected="false" data-language="Tamil">தமிழ்</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-bar">
+      <div class="header-container main-bar-inner">
+        <a class="header-brand" href="/" aria-label="Stackly home">
+          <img class="header-brand-logo" src="assets/logo/logo-stackly.webp" alt="Stackly" width="150" height="36">
+        </a>
+        <form class="site-search" role="search" action="#top">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+          <label class="sr-only" for="site-header-search">Search citizen services</label>
+          <input id="site-header-search" type="search" placeholder="Search 36 States &amp; UT portals, licenses, welfare schemes..." autocomplete="off">
+        </form>
+        <a class="btn-login" href="login.html">
+          <svg class="login-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg>
+          <span>MeriPehchaan Login</span>
+        </a>
+        <button class="header-menu-toggle" type="button" aria-label="Open primary navigation" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <div class="header-container primary-nav-inner">
+        <button class="header-drawer-close" type="button" aria-label="Close primary navigation" data-header-close>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+          <span>Menu</span>
+        </button>
+        <a class="nav-item" href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m4 11 8-7 8 7M6.5 9.5V20h11V9.5M10 20v-5h4v5" /></svg><span>Home</span></a>
+        <a class="nav-item is-active" href="services.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1" /><rect x="14" y="4" width="6" height="6" rx="1" /><rect x="4" y="14" width="6" height="6" rx="1" /><rect x="14" y="14" width="6" height="6" rx="1" /></svg><span>All Services</span></a>
+        <a class="nav-item" href="ministries.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-5h6v5M9 10h.01M15 10h.01" /></svg><span>Ministries</span></a>
+        <a class="nav-item" href="state-portal.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5zM8 8h8M8 12h5M8 16h3" /></svg><span>State Portals</span></a>
+        <a class="nav-item" href="digilocker.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1" /></svg><span>DigiLocker</span></a>
+        <a class="nav-item" href="grievance.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><path d="M4.5 19c.6-3.2 2.1-5 4.5-5s3.9 1.8 4.5 5M15 10a4 4 0 0 1 4 4v2M18 10h1.5A2.5 2.5 0 0 1 22 14.5V16h-3" /></svg><span>Grievance (CPGRAMS)</span></a>
+        <a class="nav-item" href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h17M8 16v-4M12 16V8M16 16v-6M20 16v-9" /></svg><span>Dashboard</span></a>
+        <a class="drawer-login" href="login.html">MeriPehchaan Login</a>
+      </div>
+    </nav>
+    <div class="header-drawer-backdrop" data-header-close hidden></div>
+  </header>
+
+  <main id="main-content">
+    <section class="svc-hero" id="top" aria-labelledby="svc-hero-title">
+      <div class="container svc-hero__grid">
+        <div class="svc-hero__content">
+          <span class="svc-hero__badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.5 2.5 2.8.4-.8 2.7 1.9 2-1.9 2 .8 2.7-2.8.4L12 18l-1.5-2.3-2.8-.4.8-2.7-1.9-2 1.9-2-.8-2.7 2.8-.4L12 3Z" /><circle cx="12" cy="10.6" r="2.2" /></svg>Official National Directory of Citizen Entitlements</span>
+          <h1 id="svc-hero-title" class="svc-hero__title">Explore 3,820+ Government Services Across India</h1>
+          <p class="svc-hero__sub">One unified access window for Central Ministries, 28 States, and 8 Union Territories with verified DigiLocker document synchronization.</p>
+          <form class="svc-hero__search" role="search" action="#top">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+            <input type="search" placeholder="Search by service name, statutory document (Aadhaar, Passport, P,...)" autocomplete="off">
+            <button type="button" aria-label="Voice search"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M9 21h6" /></svg></button>
+            <button onclick="window.location.href='404.html'; return false;" class="btn-find" type="submit">Find <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+          </form>
+          <div class="svc-hero__browse">
+            <span class="browse-label">Browse for:</span>
+            <button class="bchip is-active" type="button">All Citizens</button>
+            <button class="bchip" type="button">Farmers (कृषि)</button>
+            <button class="bchip" type="button">Students &amp; Youth</button>
+            <button class="bchip" type="button">Women &amp; Child</button>
+            <button class="bchip" type="button">Senior Citizens</button>
+            <button class="bchip" type="button">Business &amp; MSME</button>
+            <button class="bchip" type="button">Differently Abled (दिव्यांग)</button>
+          </div>
+        </div>
+
+        <div class="svc-hero__media">
+          <!-- TODO: swap with final compressed webp -->
+          <img src="assets/img/services/service-hero.jpg" alt="Citizens accessing government services at digital kiosks across India" width="900" height="620">
+        </div>
+      </div>
+    </section>
+
+    <section class="mp-banner">
+      <div class="container mp-banner__inner">
+        <div class="mp-banner__left">
+          <span class="mp-banner__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v4h-4" /><path d="M12 8v4l2.5 2.5" /></svg></span>
+          <div class="mp-banner__text">
+            <div class="mp-banner__heading">
+              <h3>MeriPehchaan &amp; DigiLocker Pre-fill Enabled</h3>
+              <span class="mp-badge">Zero Paperwork</span>
+            </div>
+            <p>Link your Aadhaar once to automatically pre-populate KYC verification across all 180+ central &amp; state departments.</p>
+          </div>
+        </div>
+        <div class="mp-banner__actions">
+          <button onclick="window.location.href='404.html'" class="btn-outline" type="button">Check Synced IDs (4)</button>
+          <button onclick="window.location.href='404.html'" class="btn-primary" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1" /></svg>Authorize DigiLocker</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="dpi-emp">
+      <div class="container">
+        <div class="dpi-emp__card">
+          <div class="dpi-emp__content">
+            <span class="dpi-emp__badge"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2" /><circle cx="18" cy="6" r="2" /><circle cx="12" cy="18" r="2" /><path d="M6 8v6a4 4 0 0 0 4 4h4M18 8v2a4 4 0 0 1-4 4h-4" /></svg>Digital Public Infrastructure (DPI) &bull; 100% Faceless &amp; Paperless</span>
+            <h2 class="dpi-emp__title">Empowering 1.4 Billion Citizens with Next-Gen Digital Governance</h2>
+            <p class="dpi-emp__sub">Digital India Public Services Gateway — Transforming Citizen Access. A unified, interoperable digital ecosystem delivering fast, transparent, and direct citizen entitlements right to your screen.</p>
+            <ul class="dpi-emp__list">
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2" /><circle cx="5" cy="19" r="2" /><circle cx="19" cy="19" r="2" /><path d="M12 7v5l5 5M12 12l-5 5" /></svg><span><strong>3,820+ Live Public Services</strong> synchronized across 28 States &amp; 8 UTs with unified login.</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2" /><path d="m9 12 2 2 4-4.5M8 8h5" /></svg><span><strong>Zero Paperwork</strong> via verified Aadhaar, MeriPehchaan &amp; DigiLocker cloud integration.</span></li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="m7.5 12 3 3 6-6" /></svg><span><strong>Statutory Public Charters</strong> guaranteeing time-bound delivery and real-time grievance tracking.</span></li>
+            </ul>
+            <div class="dpi-emp__actions">
+              <a class="btn-solid" href="404.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15 8.5 9.5c2.6.3 4.4 1.5 5.3 3.4M12 15l3.5-5.5c-2.6.3-4.4 1.5-5.3 3.4M12 15V21M9 3.5c1.5 1.6 2.3 3.3 2.5 5.2M15 3.5c-1.5 1.6-2.3 3.3-2.5 5.2" /></svg>Explore Direct Benefit &amp; Fast-Track Services</a>
+              <a class="btn-soft" href="404.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" /><path d="M12 11v5M12 8h.01" /></svg>Learn About DPI Ecosystem</a>
+            </div>
+          </div>
+          <div class="dpi-emp__media">
+            <!-- TODO: swap with final compressed webp -->
+            <img src="assets/img/services/img1.png" alt="Citizen-centric public service delivery illustration with diverse citizens" loading="lazy" decoding="async" width="1000" height="760">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sector">
+      <div class="container">
+        <header class="sector__head">
+          <h2 class="sector__title">Browse by Sector &amp; Domain</h2>
+          <span class="sector__count">Showing 8 Core Citizen Portfolios</span>
+        </header>
+
+        <div class="sector__grid">
+          <button class="sector-card" type="button">
+            <span class="sector-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5v-3l1.8-5h11.4l1.8 5v3M4.5 16.5h15M6 16.5v2.5M18 16.5v2.5" /><circle cx="7.5" cy="19" r="1.3" /><circle cx="16.5" cy="19" r="1.3" /><path d="M6.5 11h3M14.5 11h3" /></svg></span>
+            <span><strong class="sector-card__name">Transport &amp; Driving</strong><span class="sector-card__meta">Licence, RC, Parivahan (248)</span></span>
+          </button>
+          <button class="sector-card" type="button">
+            <span class="sector-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-5h6v5" /><path d="M9 9h.01M12 9h.01M15 9h.01M9 12h.01M12 12h.01M15 12h.01" /></svg></span>
+            <span><strong class="sector-card__name">Tax &amp; Finance</strong><span class="sector-card__meta">Income Tax, GST, PF (194)</span></span>
+          </button>
+          <button class="sector-card is-active" type="button" aria-pressed="true">
+            <span class="sector-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2" /><circle cx="9" cy="9" r="1.8" /><path d="M6.5 15.5c.6-1.8 1.5-2.7 2.5-2.7s1.9.9 2.5 2.7M14 8h3.5M14 11h3M14 14h2.5" /></svg></span>
+            <span><strong class="sector-card__name">Identity &amp; Passports</strong><span class="sector-card__meta">Aadhaar, Voter, Passport (86)</span></span>
+          </button>
+          <button class="sector-card" type="button">
+            <span class="sector-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 9.5 8.5-4.5 8.5 4.5-8.5 4.5-8.5-4.5Z" /><path d="M6.5 12.5v3.2c0 1.2 2.5 2.3 5.5 2.3s5.5-1.1 5.5-2.3v-3.2M20.5 10.2v4" /></svg></span>
+            <span><strong class="sector-card__name">Education &amp; Scholars</strong><span class="sector-card__meta">NSP, Degrees, UGC (312)</span></span>
+          </button>
+          <button class="sector-card" type="button">
+            <span class="sector-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="M12 8v5M9.5 10.5h5" /></svg></span>
+            <span><strong class="sector-card__name">Healthcare &amp; ABHA</strong><span class="sector-card__meta">Ayushman, Health IDs (142)</span></span>
+          </button>
+          <button class="sector-card" type="button">
+            <span class="sector-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15h8v3H5zM13 15v3h4.5a3 3 0 0 0 3-3v-2h-5" /><circle cx="7" cy="18.5" r="1.8" /><circle cx="17.5" cy="18.5" r="1.8" /><path d="M5 15V9h4l2 3h2M5 12h3" /></svg></span>
+            <span><strong class="sector-card__name">Agriculture &amp; Farmers</strong><span class="sector-card__meta">PM-Kisan, Soil Card (178)</span></span>
+          </button>
+          <button class="sector-card" type="button">
+            <span class="sector-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="10" rx="2" /><path d="M9 8V6.5A2.5 2.5 0 0 1 11.5 4h1A2.5 2.5 0 0 1 15 6.5V8M4 13h16M10 13v2h4v-2" /></svg></span>
+            <span><strong class="sector-card__name">Labour &amp; Employment</strong><span class="sector-card__meta">e-Shram, EPFO, ESIC (265)</span></span>
+          </button>
+          <button class="sector-card" type="button">
+            <span class="sector-card__tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 11 8-7 8 7M6 10v10h12V10M9 20v-5h6v5" /></svg></span>
+            <span><strong class="sector-card__name">Housing &amp; Utilities</strong><span class="sector-card__meta">PMAY, Water, Power (410)</span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="directory">
+      <div class="container directory__layout">
+
+        <aside class="filters" aria-label="Service filters">
+          <div class="filters__head" aria-expanded="false">
+            <span class="filters__title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0" /><circle cx="16" cy="6" r="2" /><circle cx="10" cy="12" r="2" /><circle cx="18" cy="18" r="2" /></svg>Filters</span>
+            <button class="filters__clear" type="button">Clear All (0)</button>
+          </div>
+
+          <div class="filters__group">
+            <h4>Service Category</h4>
+            <label class="frow"><input type="checkbox" checked><span class="frow__label">Transport &amp; Driving</span><span class="frow__count">128</span></label>
+            <label class="frow"><input type="checkbox"><span class="frow__label">Tax &amp; Finance</span><span class="frow__count">194</span></label>
+            <label class="frow"><input type="checkbox"><span class="frow__label">Identity &amp; Passports</span><span class="frow__count">86</span></label>
+            <label class="frow"><input type="checkbox"><span class="frow__label">Healthcare &amp; ABHA</span><span class="frow__count">142</span></label>
+            <label class="frow"><input type="checkbox"><span class="frow__label">Education &amp; Scholars</span><span class="frow__count">312</span></label>
+          </div>
+
+          <div class="filters__group">
+            <h4>Issuing Authority</h4>
+            <label class="frow"><input type="checkbox"><span class="frow__label">Ministry of Road Transport</span><span class="frow__count">22</span></label>
+            <label class="frow"><input type="checkbox"><span class="frow__label">Ministry of Home Affairs</span><span class="frow__count">18</span></label>
+            <label class="frow"><input type="checkbox"><span class="frow__label">UIDAI</span><span class="frow__count">9</span></label>
+            <label class="frow"><input type="checkbox"><span class="frow__label">Income Tax Dept.</span><span class="frow__count">14</span></label>
+            <label class="frow"><input type="checkbox"><span class="frow__label">State RTOs</span><span class="frow__count">37</span></label>
+          </div>
+
+          <div class="filters__group">
+            <h4>Service Delivery Type</h4>
+            <label class="frow"><input type="checkbox"><span class="frow__label">Fully Online</span></label>
+            <label class="frow"><input type="checkbox"><span class="frow__label">Biometric Visit</span></label>
+            <label class="frow"><input type="checkbox"><span class="frow__label">Hybrid (Offline + Online)</span></label>
+            <label class="frow"><input type="checkbox"><span class="frow__label">Doc Submission</span></label>
+          </div>
+
+          <div class="filters__group">
+            <h4>Processing SLA Time</h4>
+            <label class="frow"><input type="radio" name="sla"><span class="frow__label">Instant (&lt; 1 Hr)</span></label>
+            <label class="frow"><input type="radio" name="sla"><span class="frow__label">Fast (1 - 3 Days)</span></label>
+            <label class="frow"><input type="radio" name="sla"><span class="frow__label">Standard (4 - 7 Days)</span></label>
+            <label class="frow"><input type="radio" name="sla"><span class="frow__label">Extended (8 - 30 Days)</span></label>
+          </div>
+
+          <div class="filters__promo">
+            <span class="filters__promo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v4h-4" /><path d="M12 8v4l2.5 2.5" /></svg></span>
+            <div>
+              <h5>Fast-Track with DigiLocker</h5>
+              <p>18 linked verified documents detected in your wallet. Pre-fill your applications in 1-click.</p>
+              <a href="#">View Linked Credentials &rarr;</a>
+            </div>
+          </div>
+        </aside>
+
+        <div class="results">
+          <div class="results__bar">
+            <span class="results__count">Showing 6 of 3,820 Services</span>
+            <span class="results__query">Query: Driving License</span>
+            <label class="results__sort">Sort by:
+              <select>
+                <option>Highest Citizen Usage</option>
+                <option>Lowest Processing Time</option>
+                <option>Alphabetical (A - Z)</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="results__grid">
+            <article class="svc-card">
+              <div class="svc-card__top">
+                <span class="badge badge--green"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>100% Paperless</span>
+                <span class="badge badge--lav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>DigiLocker Pre-fill</span>
+                <span class="svc-card__tag">MoRTH</span>
+              </div>
+              <h3 class="svc-card__title">Renewal of Driving Licence (DL)</h3>
+              <p class="svc-card__meta">Ministry of Road Transport &amp; Highways | Parivahan Portal</p>
+              <p class="svc-card__desc">Faceless renewal of expired or expiring Indian motor driving licenses with online Aadhaar verification, medical self-declaration Form 1A, and home dispatch.</p>
+              <div class="svc-card__docs">
+                <span class="svc-card__docs-label">Required Documents</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Existing DL</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Aadhaar Card</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Form 1A (Medical)</span>
+              </div>
+              <div class="svc-card__stats">
+                <div><span class="label">Govt Fee</span><span class="value">₹200 + ₹200 Smart Card</span></div>
+                <div><span class="label">Processing SLA</span><span class="value">3 Working Days</span></div>
+              </div>
+              <div class="svc-card__foot">
+                <a class="svc-card__link" href="#">Procedure Guide <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+                <button onclick="window.location.href='404.html'" class="btn-apply" type="button">Apply Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+              </div>
+            </article>
+
+            <article class="svc-card">
+              <div class="svc-card__top">
+                <span class="badge badge--lav"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3" /><path d="M5 20c.6-3.5 3-5.2 7-5.2s6.4 1.7 7 5.2" /></svg>Biometric Visit</span>
+                <span class="badge badge--lav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>DigiLocker Pre-fill</span>
+                <span class="svc-card__tag">MoRTH</span>
+              </div>
+              <h3 class="svc-card__title">International Driving Permit (IDP)</h3>
+              <p class="svc-card__meta">Ministry of Road Transport &amp; Highways | State RTOs</p>
+              <p class="svc-card__desc">Official Geneva Convention 1949 multi-country driving endorsement authorizing Indian citizens to drive motor vehicles in over 150 foreign sovereign territories.</p>
+              <div class="svc-card__docs">
+                <span class="svc-card__docs-label">Required Documents</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Valid DL</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Valid Passport &amp; Visa</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Air Ticket Copy</span>
+              </div>
+              <div class="svc-card__stats">
+                <div><span class="label">Govt Fee</span><span class="value">₹1,000 Fixed</span></div>
+                <div><span class="label">Processing SLA</span><span class="value">24 - 48 Hours</span></div>
+              </div>
+              <div class="svc-card__foot">
+                <a class="svc-card__link" href="#">Checklist <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+                <button onclick="window.location.href='404.html'" class="btn-apply" type="button">Book Appointment <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+              </div>
+            </article>
+
+            <article class="svc-card">
+              <div class="svc-card__top">
+                <span class="badge badge--amber"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 13h6l-1 8 8-10h-6l1-8Z" /></svg>Instant Exam from Home</span>
+                <span class="badge badge--lav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>DigiLocker Pre-fill</span>
+                <span class="svc-card__tag">MoRTH</span>
+              </div>
+              <h3 class="svc-card__title">Application for New Learner's Licence (LL)</h3>
+              <p class="svc-card__meta">Ministry of Road Transport &amp; Highways | Sarathi e-Service</p>
+              <p class="svc-card__desc">Complete contactless Aadhaar-authenticated LL application with video-proctored road safety test. Instant digital license download upon passing.</p>
+              <div class="svc-card__docs">
+                <span class="svc-card__docs-label">Required Documents</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Aadhaar Card</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Age Proof (Class X Certificate)</span>
+              </div>
+              <div class="svc-card__stats">
+                <div><span class="label">Govt Fee</span><span class="value">₹150 + ₹50 Test</span></div>
+                <div><span class="label">Processing SLA</span><span class="value">&lt; 2 Hours (Instant)</span></div>
+              </div>
+              <div class="svc-card__foot">
+                <a class="svc-card__link" href="#">Mock Test Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+                <button onclick="window.location.href='404.html'" class="btn-apply btn-apply--amber" type="button">Apply &amp; Test Now <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+              </div>
+            </article>
+
+            <article class="svc-card">
+              <div class="svc-card__top">
+                <span class="badge badge--green"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>100% Paperless</span>
+                <span class="badge badge--lav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>DigiLocker Pre-fill</span>
+                <span class="svc-card__tag">MoRTH</span>
+              </div>
+              <h3 class="svc-card__title">Change of Address in Driving Licence</h3>
+              <p class="svc-card__meta">Ministry of Road Transport &amp; Highways | State RTO Jurisdiction</p>
+              <p class="svc-card__desc">Update residential or permanent address details on active driving license record automatically using authenticated UIDAI Aadhaar XML e-KYC.</p>
+              <div class="svc-card__docs">
+                <span class="svc-card__docs-label">Required Documents</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Original DL</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Aadhaar (with new address)</span>
+              </div>
+              <div class="svc-card__stats">
+                <div><span class="label">Govt Fee</span><span class="value">₹200 Statutory</span></div>
+                <div><span class="label">Processing SLA</span><span class="value">5 Working Days</span></div>
+              </div>
+              <div class="svc-card__foot">
+                <a class="svc-card__link" href="#">RTO Transfer Rules <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+                <button onclick="window.location.href='404.html'" class="btn-apply" type="button">Apply Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+              </div>
+            </article>
+
+            <article class="svc-card">
+              <div class="svc-card__top">
+                <span class="badge badge--green"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>100% Paperless</span>
+                <span class="badge badge--lav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>DigiLocker Pre-fill</span>
+                <span class="svc-card__tag">MoRTH</span>
+              </div>
+              <h3 class="svc-card__title">Issue of Duplicate Driving Licence</h3>
+              <p class="svc-card__meta">Ministry of Road Transport &amp; Highways | Citizen Portal</p>
+              <p class="svc-card__desc">Online reissuance of lost, mutilated, stolen, or defaced driving license card with instant digital duplicate issued to citizen DigiLocker vault.</p>
+              <div class="svc-card__docs">
+                <span class="svc-card__docs-label">Required Documents</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>LDR (Lost Doc Report) / FIR</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Aadhaar Card</span>
+              </div>
+              <div class="svc-card__stats">
+                <div><span class="label">Govt Fee</span><span class="value">₹200 Fee</span></div>
+                <div><span class="label">Processing SLA</span><span class="value">4 Working Days</span></div>
+              </div>
+              <div class="svc-card__foot">
+                <a class="svc-card__link" href="#">File Lost Report Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+                <button onclick="window.location.href='404.html'" class="btn-apply" type="button">Apply Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+              </div>
+            </article>
+
+            <article class="svc-card">
+              <div class="svc-card__top">
+                <span class="badge badge--lav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10l2 5H5l2-5Z" /><path d="M5 9h14v11H5zM9 9v11M15 9v11" /></svg>Driver Training Cert</span>
+                <span class="badge badge--lav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg>DigiLocker Pre-fill</span>
+                <span class="svc-card__tag">MoRTH</span>
+              </div>
+              <h3 class="svc-card__title">Commercial Driving Licence (Transport) Endorsement</h3>
+              <p class="svc-card__meta">Ministry of Road Transport &amp; Highways | RTO Operations</p>
+              <p class="svc-card__desc">Endorsement of heavy commercial goods and passenger motor vehicle transport classes (HMV/LMV-TR) with accredited driver institute certification.</p>
+              <div class="svc-card__docs">
+                <span class="svc-card__docs-label">Required Documents</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Form 5 (Driving School Cert)</span>
+                <span class="doc-chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M8 12h8M8 15h8" /></svg>Medical Certificate Form 1A</span>
+              </div>
+              <div class="svc-card__stats">
+                <div><span class="label">Govt Fee</span><span class="value">₹500 Fee</span></div>
+                <div><span class="label">Processing SLA</span><span class="value">7 Working Days</span></div>
+              </div>
+              <div class="svc-card__foot">
+                <a class="svc-card__link" href="#">Approved Schools List <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+                <button onclick="window.location.href='404.html'" class="btn-apply" type="button">Apply Online <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+              </div>
+            </article>
+          </div>
+
+          <nav class="results__pager" aria-label="Pagination">
+            <span class="pager__info">Showing 1 - 6 of 3,820 civic services</span>
+            <div class="pager__pages">
+              <button type="button" disabled>Previous</button>
+              <button class="is-active" type="button">1</button>
+              <button type="button">2</button>
+              <button type="button">3</button>
+              <span>&hellip;</span>
+              <button type="button">637</button>
+              <button type="button">Next</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="request">
+      <div class="container">
+        <div class="request__panel">
+          <div class="request__content">
+            <span class="request__badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 13.8 9l5.5 1.8-5.5 1.7L12 18l-1.8-5.5-5.5-1.7L10.2 9 12 3.5Z" /><path d="M19 15.5l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9.9-2.6Z" /></svg>Citizen Service Request Initiative</span>
+            <h2 class="request__title">Couldn't find the specific service or scheme you need?</h2>
+            <p class="request__sub">Submit an onboarding request to the JanSeva Civic Tech Cell. Our engineering team actively liaises with state and municipal departments to digitize non-listed public citizen entitlements.</p>
+            <div class="request__actions">
+              <a class="btn-request" href="404.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><path d="M4.5 19c.6-3.2 2.1-5 4.5-5s3.9 1.8 4.5 5M14 7h4M16 5v4" /></svg>Request a Government Service</a>
+              <a class="btn-ghost" href="404.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><path d="M4.5 19c.6-3.2 2.1-5 4.5-5s3.9 1.8 4.5 5M15 10a4 4 0 0 1 4 4v2M18 10h1.5A2.5 2.5 0 0 1 22 14.5V16h-3" /></svg>Lodge Portal Grievance</a>
+            </div>
+          </div>
+
+          <div class="request__lifelines">
+            <h3>24X7 Citizen Emergency Lifelines</h3>
+            <div class="lifeline-grid">
+              <div class="lifeline"><span class="lifeline__label">All Emergency</span><span class="lifeline__num">112</span></div>
+              <div class="lifeline"><span class="lifeline__label">Cyber Fraud Call</span><span class="lifeline__num">1930</span></div>
+              <div class="lifeline"><span class="lifeline__label">National Health</span><span class="lifeline__num">1075</span></div>
+              <div class="lifeline"><span class="lifeline__label">Citizen Toll-Free</span><span class="lifeline__num">1800-11-4000</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <!-- TODO: replace logo SVG -->
+          <a class="footer__logo" href="/" aria-label="Stackly home">
+            <img src="assets/logo/logo-stackly.webp" alt="Stackly" width="130" height="36">
+          </a>
+          <p class="footer__about">JanSeva is an integrated single-window platform bringing Central, State, and District administrative utilities into a unified, authenticated, and citizen-first digital journey.</p>
+          <div class="footer__accr">
+            <span class="footer__accr-label">Accreditations:</span>
+            <span class="accr-badge">STQC Certified</span>
+            <span class="accr-badge">WCAG 2.2 AAA</span>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Citizen Lifecycle">
+          <h4>Citizen Lifecycle</h4>
+          <ul>
+            <li><a href="404.html">Birth &amp; Child Healthcare</a></li>
+            <li><a href="404.html">Education &amp; Skill Vouchers</a></li>
+            <li><a href="404.html">Employment &amp; Labor Welfare</a></li>
+            <li><a href="404.html">Housing &amp; Land Registry</a></li>
+            <li><a href="404.html">Retirement &amp; Social Pension</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="National Gateways">
+          <h4>National Gateways</h4>
+          <ul>
+            <li><a href="404.html">DigiLocker Ecosystem</a></li>
+            <li><a href="404.html">MyGov Citizen Engagement</a></li>
+            <li><a href="404.html">CPGRAMS Grievance Portal</a></li>
+            <li><a href="404.html">India.gov.in Directory</a></li>
+            <li><a href="404.html">Direct Benefit Transfer (DBT)</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="Governance and Legal">
+          <h4>Governance &amp; Legal</h4>
+          <ul>
+            <li><a href="404.html">RTI Online Portal</a></li>
+            <li><a href="404.html">Data Privacy Policy</a></li>
+            <li><a href="404.html">Terms of Service</a></li>
+            <li><a href="404.html">Hyperlinking Policy</a></li>
+            <li><a href="404.html">Helpdesk &amp; Escalation</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__strip">
+        <span>Emergency: 112</span><i></i>
+        <span>Cyber Helpline: 1930</span><i></i>
+        <span>Health: 1075</span><i></i>
+        <span>RTI Online</span><i></i>
+        <span class="is-strong">STQC Certified</span><i></i>
+        <span class="is-strong">WCAG 2.2 AAA Compliant</span><i></i>
+        <span>Terms of Service</span><i></i>
+        <span>Privacy Policy</span><i></i>
+        <span>Helpdesk</span>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__credit">Designed, developed and hosted by National Informatics Centre (NIC), Ministry of Electronics &amp; Information Technology, Government of India.</p>
+        <div class="footer__meta">
+          <span>Last Updated: 24 Oct 2024</span><i></i>
+          <span class="footer__safe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg>Cyber Safe Verified</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="accessibility-tools">
+    <button class="floating-tool" type="button" data-a11y-trigger aria-expanded="false" aria-controls="a11y-panel" aria-label="Open accessibility options">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2" /><path d="M5 9h14M12 9v10M8.5 20l3.5-6 3.5 6" /></svg>
+      <span>Accessibility</span>
+    </button>
+    <div class="a11y-panel" id="a11y-panel" hidden>
+      <strong>Accessibility options</strong>
+      <button type="button" data-a11y-action="contrast">Increase contrast</button>
+      <button type="button" data-a11y-action="text">Larger text</button>
+      <button type="button" data-a11y-action="reset">Reset view</button>
+    </div>
+  </div>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6" /></svg>
+  </button>
+
+  <script src="js/services.js" defer></script>
+</body>
+</html>

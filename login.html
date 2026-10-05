@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stackly MeriPehchaan Single Sign-On (NSSO) — a secure gateway to 1,200+ Central, State, and Municipal Government public services.">
+  <title>Stackly | MeriPehchaan Single Sign-On (NSSO)</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="utility-bar">
+      <div class="header-container utility-content">
+        <div class="utility-primary">
+          <div class="utility-identity">
+            <span class="utility-status-dot" aria-hidden="true"></span>
+            <span class="utility-stack"><span lang="hi">भारत सरकार</span><span>Government of India</span></span>
+          </div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <div class="utility-detail"><span>Ministry of Electronics &amp;</span><span>Information Technology (MeitY)</span></div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <div class="utility-detail"><span>Digital India</span><span>Initiative</span></div>
+        </div>
+
+        <div class="utility-right">
+          <div class="font-size-control" role="group" aria-label="Text size">
+            <button type="button" data-font-size="sm" aria-label="Decrease text size">A-</button>
+            <button type="button" data-font-size="md" aria-label="Reset text size">A</button>
+            <button type="button" data-font-size="lg" aria-label="Increase text size">A+</button>
+          </div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <button class="utility-tool" type="button" aria-label="Increase contrast">
+            <svg class="utility-icon contrast-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16Z" fill="currentColor" stroke="none" /><path d="M12 4a8 8 0 0 1 0 16Z" fill="var(--navy-900)" stroke="none" /></svg>
+            <span>Contrast</span>
+          </button>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <button class="utility-tool utility-screen-reader" type="button" aria-label="Screen reader support">
+            <svg class="utility-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.5" /><path d="M5 9h14M12 9v10M8.5 20l3.5-6 3.5 6" /></svg>
+            <span>Screen<br>Reader</span>
+          </button>
+          <div class="language-control">
+            <button class="language-selector" id="language-selector" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-menu">
+              <svg class="utility-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h11M9.5 5v2M6 5c.8 3.4 2.5 5.8 5.1 7.4M6.5 10.5c2.3-.9 4.3-2.5 5.8-4.7" /><circle cx="16.5" cy="15.5" r="4.5" /><path d="M12 15.5h9M16.5 11c1.2 1.3 1.8 2.8 1.8 4.5s-.6 3.2-1.8 4.5c-1.2-1.3-1.8-2.8-1.8-4.5s.6-3.2 1.8-4.5Z" /></svg>
+              <span class="language-copy"><span>Language: English</span><span lang="hi">(हिन्दी)</span></span>
+              <svg class="language-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+            </button>
+            <div class="language-menu" id="language-menu" role="listbox" aria-label="Choose language" hidden>
+              <button type="button" role="option" aria-selected="true" data-language="English">English</button>
+              <button type="button" role="option" aria-selected="false" data-language="Hindi">हिन्दी</button>
+              <button type="button" role="option" aria-selected="false" data-language="Tamil">தமிழ்</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-bar">
+      <div class="header-container main-bar-inner">
+        <a class="header-brand" href="index.html" aria-label="Stackly home">
+          <img class="header-brand-logo" src="assets/logo/logo-stackly.webp" alt="Stackly" width="150" height="36">
+        </a>
+        <form class="site-search" role="search" action="#top">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+          <label class="sr-only" for="site-header-search">Search citizen services</label>
+          <input id="site-header-search" type="search" placeholder="Search 36 States &amp; UT portals, licenses, welfare schemes..." autocomplete="off">
+        </form>
+        <a class="btn-login" href="login.html">
+          <svg class="login-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg>
+          <span>MeriPehchaan Login</span>
+        </a>
+        <button class="header-menu-toggle" type="button" aria-label="Open primary navigation" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <div class="header-container primary-nav-inner">
+        <button class="header-drawer-close" type="button" aria-label="Close primary navigation" data-header-close>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+          <span>Menu</span>
+        </button>
+        <a class="nav-item" href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m4 11 8-7 8 7M6.5 9.5V20h11V9.5M10 20v-5h4v5" /></svg><span>Home</span></a>
+        <a class="nav-item" href="services.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1" /><rect x="14" y="4" width="6" height="6" rx="1" /><rect x="4" y="14" width="6" height="6" rx="1" /><rect x="14" y="14" width="6" height="6" rx="1" /></svg><span>All Services</span></a>
+        <a class="nav-item" href="ministries.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-5h6v5M9 10h.01M15 10h.01" /></svg><span>Ministries</span></a>
+        <a class="nav-item" href="state-portal.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5zM8 8h8M8 12h5M8 16h3" /></svg><span>State Portals</span></a>
+        <a class="nav-item" href="digilocker.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1" /></svg><span>DigiLocker</span></a>
+        <a class="nav-item" href="grievance.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><path d="M4.5 19c.6-3.2 2.1-5 4.5-5s3.9 1.8 4.5 5M15 10a4 4 0 0 1 4 4v2M18 10h1.5A2.5 2.5 0 0 1 22 14.5V16h-3" /></svg><span>Grievance (CPGRAMS)</span></a>
+        <a class="nav-item" href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h17M8 16v-4M12 16V8M16 16v-6M20 16v-9" /></svg><span>Dashboard</span></a>
+        <a class="drawer-login" href="login.html">MeriPehchaan Login</a>
+      </div>
+    </nav>
+    <div class="header-drawer-backdrop" data-header-close hidden></div>
+  </header>
+
+  <main id="main-content">
+    <section class="sshero" aria-labelledby="sshero-title">
+      <div class="container sshero__inner">
+
+        <div class="sshero__left">
+          <div class="sshero__title-row">
+            <h1 id="sshero-title" class="sshero__title">MeriPehchaan Single Sign-On (NSSO)</h1>
+            <span class="sshero__badge">Official SSO</span>
+          </div>
+          <p class="sshero__sub">Single secure gateway to 1,200+ Central, State, and Municipal
+             Government public services.</p>
+        </div>
+
+        <span class="sshero__status">
+          <i class="sshero__dot"></i> SSL/TLS 1.3 Certified • UIDAI 2.5 API Operational
+        </span>
+
+      </div>
+    </section>
+
+    <section class="authx">
+      <div class="container authx__grid">
+
+        <!-- ============ LEFT COLUMN ============ -->
+        <div class="authx__left">
+
+          <div class="pillar">
+            <span class="pillar__icon is-lav"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18" /></svg></span>
+            <div><strong>1 Identity • 1,200+ Portals</strong>
+                 <small>Central, State, District &amp; Panchayat</small></div>
+          </div>
+          <div class="pillar">
+            <span class="pillar__icon is-amber"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1.2" /></svg></span>
+            <div><strong>256-Bit Cryptographic Security</strong>
+                 <small>STQC Audited &amp; CERT-In Compliant</small></div>
+          </div>
+          <div class="pillar">
+            <span class="pillar__icon is-green"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg></span>
+            <div><strong>DPDP Act 2023 Compliant</strong>
+                 <small>Complete citizen data privacy protection</small></div>
+          </div>
+
+          <figure class="authx__art">
+            <!-- TODO: replace illustration (assets/img/auth/img1) -->
+            <img src="assets/img/auth/img1.png" alt="Citizen authenticating on MeriPehchaan with DigiLocker, Aadhaar and PAN verified" width="1200" height="896">
+          </figure>
+
+          <div class="why">
+            <div class="why__head">
+              <h2>Why use MeriPehchaan?</h2>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /></svg>
+            </div>
+            <div class="why__rows">
+              <div class="why-row">
+                <span class="why-row__icon is-lav"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><circle cx="8.5" cy="11" r="2" /><path d="M5.5 16c.6-1.5 1.7-2.2 3-2.2s2.4.7 3 2.2M14 10h5M14 13h5" /></svg></span>
+                <div><strong>Direct DigiLocker Document Pull</strong>
+                     <p>Authorize verified electronic credentials without submitting physical
+                        photocopies or manual document scans.</p></div>
+              </div>
+              <div class="why-row">
+                <span class="why-row__icon is-amber"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2.5" /><circle cx="18" cy="6" r="2.5" /><circle cx="18" cy="18" r="2.5" /><path d="m8.2 10.8 7.6-3.6M8.2 13.2l7.6 3.6" /></svg></span>
+                <div><strong>Instant Federated Navigation</strong>
+                     <p>Switch smoothly between Income Tax, Parivahan, EPFO, e-District, and CPGRAMS
+                        with zero repeated re-logins.</p></div>
+              </div>
+              <div class="why-row">
+                <span class="why-row__icon is-green"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-3.9 0-7 3.1-7 7v1.5" /><path d="M12 8.5c-1.9 0-3.5 1.6-3.5 3.5v3" /><path d="M12 12v4.5" /><path d="M15.5 12a3.5 3.5 0 0 0-1.5-2.9" /><path d="M19 12a7 7 0 0 0-2-4.9" /><path d="M16 19c.6-1.3.9-2.6.9-4" /></svg></span>
+                <div><strong>Biometric &amp; Aadhaar OTP Assurance</strong>
+                     <p>Multi-factor citizen authentication complying with strict Indian Aadhaar
+                        authentication standards.</p></div>
+              </div>
+            </div>
+            <div class="why__eco">
+              <span class="why__eco-label">Interlinked Portals Ecosystem</span>
+              <div class="why__chips">
+                <span class="why-chip">DigiLocker</span>
+                <span class="why-chip">Parivahan Sewa</span>
+                <span class="why-chip">CPGRAMS</span>
+                <span class="why-chip">e-District</span>
+                <span class="why-chip">EPFO Citizen</span>
+                <span class="why-chip">UMANG</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="helplines">
+            <div class="helplines__head"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13v-1a8 8 0 0 1 16 0v1" /><rect x="3" y="13" width="4" height="6" rx="1.5" /><rect x="17" y="13" width="4" height="6" rx="1.5" /><path d="M19 19a3 3 0 0 1-3 3h-2" /></svg> Official Citizen Helplines (24×7)</div>
+            <div class="helplines__grid">
+              <div class="helpline"><span>Emergency Response</span><strong>112</strong></div>
+              <div class="helpline"><span>National Cyber Helpline</span><strong>1930</strong></div>
+              <div class="helpline"><span>JanSeva Helpdesk</span><strong>1800-111-555</strong></div>
+              <div class="helpline"><span>Health Helpline</span><strong>1075</strong></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ============ RIGHT COLUMN ============ -->
+        <div class="authx__right">
+
+          <div class="signin">
+            <div class="signin__top">
+              <span class="signin__eyebrow">Citizen Authentication</span>
+              <span class="signin__live"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg> UIDAI Live</span>
+            </div>
+
+            <h2 class="signin__title">Sign In to Your JanSeva Account</h2>
+            <p class="signin__sub">Select your preferred verified credential method below to continue.</p>
+
+            <!-- ROLE TABS (two roles) -->
+            <div class="roles" role="tablist" aria-label="Select role">
+              <button class="role is-active" role="tab" aria-selected="true">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5 19c.7-3.2 3.4-5 7-5s6.3 1.8 7 5" /></svg> Citizen</button>
+              <button class="role" role="tab" aria-selected="false">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12h18" /></svg> Government Official</button>
+            </div>
+
+            <label class="sfield" data-field="name">
+              <span class="sfield__label">Full Name (as per official identity card) <i>*</i></span>
+              <span class="sfield__wrap">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5 19c.7-3.2 3.4-5 7-5s6.3 1.8 7 5" /></svg>
+                <input type="text" placeholder="e.g. Ramesh Chandra Sharma" aria-label="Full name" autocomplete="name">
+              </span>
+              <span class="sfield__error" role="alert"></span>
+            </label>
+
+            <label class="sfield" data-field="mobile">
+              <span class="sfield__label">Registered Mobile Number or Aadhaar Number <i>*</i></span>
+              <span class="sfield__group">
+                <span class="sfield__cc"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="6" width="16" height="12" rx="1.5" /><path d="M4 12h16M12 6v12" /><circle cx="12" cy="12" r="2" /></svg> +91</span>
+                <input type="tel" value="98765 43210" aria-label="Mobile or Aadhaar number">
+                <button class="sfield__change" type="button">Change</button>
+              </span>
+              <span class="sfield__error" role="alert"></span>
+            </label>
+            <p class="signin__hint"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" /></svg> OTP will be sent to the registered mobile linked with
+               your MeriPehchaan/UIDAI profile.</p>
+
+            <div class="otp">
+              <div class="otp__head">
+                <span class="otp__title"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></svg> Enter 6-Digit One-Time Password (OTP)</span>
+                <span class="otp__resend">Resend OTP in 28s</span>
+              </div>
+              <div class="otp__inputs">
+                <input maxlength="1" value="7" aria-label="OTP digit 1">
+                <input maxlength="1" value="2" aria-label="OTP digit 2">
+                <input maxlength="1" value="9" aria-label="OTP digit 3">
+                <input maxlength="1" value="4" aria-label="OTP digit 4">
+                <input maxlength="1" aria-label="OTP digit 5">
+                <input maxlength="1" aria-label="OTP digit 6">
+              </div>
+              <span class="otp__error sfield__error" role="alert"></span>
+              <div class="otp__foot">
+                <a class="otp__help" href="404.html">Having trouble receiving SMS?</a>
+                <a class="otp__wa" href="404.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.6-4A8 8 0 1 1 20 11.5Z" /><path d="M9 9c0 3 2.5 5.5 5.5 5.5l1-1.3-1.9-.9-.8.8c-1-.4-1.9-1.3-2.3-2.3l.8-.8-.9-1.9L9 9Z" /></svg> Receive OTP on WhatsApp</a>
+              </div>
+            </div>
+
+            <div class="captcha">
+              <span class="sfield__label">Security Captcha Verification</span>
+              <div class="captcha__row">
+                <div class="captcha__box">
+                  <span class="captcha__code">7 K 9 M 2</span>
+                  <span class="captcha__tools"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h3l5 4V5L7 9H4Z" /><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" /></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6" /><path d="M20 4v5h-5" /></svg></span>
+                </div>
+                <input class="captcha__input" placeholder="Enter characters shown" aria-label="Captcha">
+              </div>
+              <span class="sfield__error" role="alert"></span>
+            </div>
+
+            <label class="scheck">
+              <input type="checkbox" checked>
+              <span>I give voluntary consent to JanSeva &amp; MeriPehchaan to authenticate my identity
+                 via UIDAI/NSSO under the Aadhaar Act, 2016 and the DPDP Act, 2023.</span>
+            </label>
+            <label class="scheck">
+              <input type="checkbox">
+              <span>Keep me signed in on this secure device for 8 hours (Public terminal unchecked).</span>
+            </label>
+
+            <p class="signin__forgot"><a href="404.html">Forgot Password?</a></p>
+
+            <button class="signin__submit" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 17l5-5-5-5" /><path d="M15 12H4" /><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4" /></svg> Sign In via MeriPehchaan</button>
+
+            <div class="signin__divider"><span>or sign in with official partner id</span></div>
+
+            <div class="partners">
+              <button class="partner" type="button">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z" /><path d="M14 3v4h4" /><path d="M9.5 13h5M9.5 16h5" /></svg><strong>DigiLocker</strong><small>Citizen Credentials</small></button>
+              <button class="partner" type="button">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><circle cx="12" cy="10" r="3" /><path d="M6.5 18.5c1-2.4 3-3.6 5.5-3.6s4.5 1.2 5.5 3.6" /></svg><strong>Parichay</strong><small>Govt Officials (GOI)</small></button>
+              <button class="partner" type="button">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg><strong>e-Pramaam</strong><small>Jan Parichay SSO</small></button>
+            </div>
+
+            <div class="signin__register">
+              <span>New to JanSeva or MeriPehchaan?</span>
+              <a href="signup.html">Register / Create New Citizen Account <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </div>
+          </div>
+
+          <div class="phish">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 2.5 20h19L12 4Z" /><path d="M12 10v4M12 17h.01" /></svg>
+            Beware of phishing links. The Government of India never asks for your OTP, Aadhaar PIN,
+            or Banking CVV over call or SMS.
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <!-- TODO: replace logo SVG -->
+          <a class="footer__logo" href="index.html" aria-label="Stackly home">
+            <img src="assets/logo/logo-stackly.webp" alt="Stackly" width="170" height="36">
+          </a>
+          <p class="footer__about">JanSeva is an integrated single-window platform bringing Central, State, and District administrative utilities into a unified, authenticated, and citizen-first digital journey.</p>
+          <div class="footer__accr">
+            <span class="footer__accr-label">Accreditations:</span>
+            <span class="accr-badge">STQC Certified</span>
+            <span class="accr-badge">WCAG 2.2 AAA</span>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Citizen Lifecycle">
+          <h4>Citizen Lifecycle</h4>
+          <ul>
+            <li><a href="404.html">Birth &amp; Child Healthcare</a></li>
+            <li><a href="404.html">Education &amp; Skill Vouchers</a></li>
+            <li><a href="404.html">Employment &amp; Labor Welfare</a></li>
+            <li><a href="404.html">Housing &amp; Land Registry</a></li>
+            <li><a href="404.html">Retirement &amp; Social Pension</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="National Gateways">
+          <h4>National Gateways</h4>
+          <ul>
+            <li><a href="404.html">DigiLocker Ecosystem</a></li>
+            <li><a href="404.html">MyGov Citizen Engagement</a></li>
+            <li><a href="404.html">CPGRAMS Grievance Portal</a></li>
+            <li><a href="404.html">India.gov.in Directory</a></li>
+            <li><a href="404.html">Direct Benefit Transfer (DBT)</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="Governance and Legal">
+          <h4>Governance &amp; Legal</h4>
+          <ul>
+            <li><a href="404.html">RTI Online Portal</a></li>
+            <li><a href="404.html">Data Privacy Policy</a></li>
+            <li><a href="404.html">Terms of Service</a></li>
+            <li><a href="404.html">Hyperlinking Policy</a></li>
+            <li><a href="404.html">Helpdesk &amp; Escalation</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__strip">
+        <span>Emergency: 112</span><i></i>
+        <span>Cyber Helpline: 1930</span><i></i>
+        <span>Health: 1075</span><i></i>
+        <span>RTI Online</span><i></i>
+        <span class="is-strong">STQC Certified</span><i></i>
+        <span class="is-strong">WCAG 2.2 AAA Compliant</span><i></i>
+        <span>Terms of Service</span><i></i>
+        <span>Privacy Policy</span><i></i>
+        <span>Helpdesk</span>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__credit">Designed, developed and hosted by National Informatics Centre (NIC), Ministry of Electronics &amp; Information Technology, Government of India.</p>
+        <div class="footer__meta">
+          <span>Last Updated: 24 Oct 2024</span><i></i>
+          <span class="footer__safe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg>Cyber Safe Verified</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="accessibility-tools">
+    <button class="floating-tool" type="button" data-a11y-trigger aria-expanded="false" aria-controls="a11y-panel" aria-label="Open accessibility options">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2" /><path d="M5 9h14M12 9v10M8.5 20l3.5-6 3.5 6" /></svg>
+      <span>Accessibility</span>
+    </button>
+    <div class="a11y-panel" id="a11y-panel" hidden>
+      <strong>Accessibility options</strong>
+      <button type="button" data-a11y-action="contrast">Increase contrast</button>
+      <button type="button" data-a11y-action="text">Larger text</button>
+      <button type="button" data-a11y-action="reset">Reset view</button>
+    </div>
+  </div>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6" /></svg>
+  </button>
+
+  <script src="js/login.js" defer></script>
+</body>
+</html>

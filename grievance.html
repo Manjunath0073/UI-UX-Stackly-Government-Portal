@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stackly Public Grievance Redressal &amp; Monitoring (CPGRAMS) — lodge public grievances against Central Ministries, Departments, Autonomous Bodies, and State Governments with time-bound statutory accountability.">
+  <title>Stackly | Public Grievance Redressal &amp; Monitoring (CPGRAMS)</title>
+  <link rel="stylesheet" href="css/grievance.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="utility-bar">
+      <div class="header-container utility-content">
+        <div class="utility-primary">
+          <div class="utility-identity">
+            <span class="utility-status-dot" aria-hidden="true"></span>
+            <span class="utility-stack"><span lang="hi">भारत सरकार</span><span>Government of India</span></span>
+          </div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <div class="utility-detail"><span>Ministry of Electronics &amp;</span><span>Information Technology (MeitY)</span></div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <div class="utility-detail"><span>Digital India</span><span>Initiative</span></div>
+        </div>
+
+        <div class="utility-right">
+          <div class="font-size-control" role="group" aria-label="Text size">
+            <button type="button" data-font-size="sm" aria-label="Decrease text size">A-</button>
+            <button type="button" data-font-size="md" aria-label="Reset text size">A</button>
+            <button type="button" data-font-size="lg" aria-label="Increase text size">A+</button>
+          </div>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <button class="utility-tool" type="button" aria-label="Increase contrast">
+            <svg class="utility-icon contrast-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16Z" fill="currentColor" stroke="none" /><path d="M12 4a8 8 0 0 1 0 16Z" fill="var(--navy-900)" stroke="none" /></svg>
+            <span>Contrast</span>
+          </button>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <button class="utility-tool utility-screen-reader" type="button" aria-label="Screen reader support">
+            <svg class="utility-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.5" /><path d="M5 9h14M12 9v10M8.5 20l3.5-6 3.5 6" /></svg>
+            <span>Screen<br>Reader</span>
+          </button>
+          <div class="language-control">
+            <button class="language-selector" id="language-selector" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-menu">
+              <svg class="utility-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h11M9.5 5v2M6 5c.8 3.4 2.5 5.8 5.1 7.4M6.5 10.5c2.3-.9 4.3-2.5 5.8-4.7" /><circle cx="16.5" cy="15.5" r="4.5" /><path d="M12 15.5h9M16.5 11c1.2 1.3 1.8 2.8 1.8 4.5s-.6 3.2-1.8 4.5c-1.2-1.3-1.8-2.8-1.8-4.5s.6-3.2 1.8-4.5Z" /></svg>
+              <span class="language-copy"><span>Language: English</span><span lang="hi">(हिन्दी)</span></span>
+              <svg class="language-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+            </button>
+            <div class="language-menu" id="language-menu" role="listbox" aria-label="Choose language" hidden>
+              <button type="button" role="option" aria-selected="true" data-language="English">English</button>
+              <button type="button" role="option" aria-selected="false" data-language="Hindi">हिन्दी</button>
+              <button type="button" role="option" aria-selected="false" data-language="Tamil">தமிழ்</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-bar">
+      <div class="header-container main-bar-inner">
+        <a class="header-brand" href="index.html" aria-label="Stackly home">
+          <img class="header-brand-logo" src="assets/logo/logo-stackly.webp" alt="Stackly" width="150" height="36">
+        </a>
+        <form class="site-search" role="search" action="#top">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+          <label class="sr-only" for="site-header-search">Search citizen services</label>
+          <input id="site-header-search" type="search" placeholder="Search 36 States &amp; UT portals, licenses, welfare schemes..." autocomplete="off">
+        </form>
+        <a class="btn-login" href="login.html">
+          <svg class="login-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg>
+          <span>MeriPehchaan Login</span>
+        </a>
+        <button class="header-menu-toggle" type="button" aria-label="Open primary navigation" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <div class="header-container primary-nav-inner">
+        <button class="header-drawer-close" type="button" aria-label="Close primary navigation" data-header-close>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+          <span>Menu</span>
+        </button>
+        <a class="nav-item" href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m4 11 8-7 8 7M6.5 9.5V20h11V9.5M10 20v-5h4v5" /></svg><span>Home</span></a>
+        <a class="nav-item" href="services.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1" /><rect x="14" y="4" width="6" height="6" rx="1" /><rect x="4" y="14" width="6" height="6" rx="1" /><rect x="14" y="14" width="6" height="6" rx="1" /></svg><span>All Services</span></a>
+        <a class="nav-item" href="ministries.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-5h6v5M9 10h.01M15 10h.01" /></svg><span>Ministries</span></a>
+        <a class="nav-item" href="state-portal.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5zM8 8h8M8 12h5M8 16h3" /></svg><span>State Portals</span></a>
+        <a class="nav-item" href="digilocker.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /><circle cx="12" cy="15" r="1" /></svg><span>DigiLocker</span></a>
+        <a class="nav-item is-active" href="grievance.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><path d="M4.5 19c.6-3.2 2.1-5 4.5-5s3.9 1.8 4.5 5M15 10a4 4 0 0 1 4 4v2M18 10h1.5A2.5 2.5 0 0 1 22 14.5V16h-3" /></svg><span>Grievance (CPGRAMS)</span></a>
+        <a class="nav-item" href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h17M8 16v-4M12 16V8M16 16v-6M20 16v-9" /></svg><span>Dashboard</span></a>
+        <a class="drawer-login" href="login.html">MeriPehchaan Login</a>
+      </div>
+    </nav>
+    <div class="header-drawer-backdrop" data-header-close hidden></div>
+  </header>
+
+  <main id="main-content">
+    <section class="ghero" id="top" aria-labelledby="ghero-title">
+      <div class="container ghero__inner">
+
+        <div class="ghero__left">
+          <span class="ghero__eyebrow">
+            <span class="ghero__eyebrow-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16h18M5 16v4M19 16v4M9 16v4M15 16v4M12 20v-4M5 16V9l7-4 7 4v7M9 11h.01M12 11h.01M15 11h.01" /></svg></span>
+            <strong>DARPG</strong> | Department of Administrative Reforms &amp; Public Grievances
+          </span>
+
+          <h1 id="ghero-title" class="ghero__title">Public Grievance Redressal &amp; Monitoring (CPGRAMS)</h1>
+
+          <p class="ghero__sub">An integrated 24×7 web and mobile platform enabling Indian citizens
+             to lodge public grievances pertaining to Central Ministries, Departments, Autonomous
+             Bodies, and State Governments with time-bound statutory accountability.</p>
+
+          <div class="ghero__chips">
+            <span class="ghero__chip"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2.1 2.1M16.9 16.9 19 19M19 5l-2.1 2.1M7.1 16.9 5 19" /></svg> Statutory 30-Day Maximum SLA</span>
+            <span class="ghero__chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v15M7 3h10" /><path d="M6 8l-3 6a3.5 3.5 0 0 0 6 0L6 8ZM18 8l-3 6a3.5 3.5 0 0 0 6 0l-3-6Z" /></svg> Direct Escalation to Appellate Authority</span>
+            <span class="ghero__chip"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /><path d="M18.5 5.5 20 8l-2.8.3" /></svg> End-to-End Cryptographic Audit Trail</span>
+          </div>
+        </div>
+
+        <aside class="ghero__panel">
+          <div class="ghero__panel-head">
+            <span class="ghero__panel-title"><i class="ghero__dot"></i> Portal Performance Metrics</span>
+            <span class="ghero__panel-fy">FY 2024-25</span>
+          </div>
+          <div class="ghero__stats">
+            <div class="ghero__stat">
+              <span class="ghero__stat-label">Disposal Rate</span>
+              <span class="ghero__stat-value"><span class="counter" data-target="98.4" data-decimals="1">98.4</span>%</span>
+              <span class="ghero__stat-delta">↗ +1.8% YoY</span>
+            </div>
+            <div class="ghero__stat">
+              <span class="ghero__stat-label">Average Disposal</span>
+              <span class="ghero__stat-value"><span class="counter" data-target="16.4" data-decimals="1">16.4</span> Days</span>
+              <span class="ghero__stat-note">Target: &lt; 30 Days</span>
+            </div>
+          </div>
+          <div class="ghero__officers">
+            <span class="ghero__officers-label">Active Grievance Officers Deployed:</span>
+            <span class="ghero__officers-value">12,840+ Nodal Officers</span>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="gactions" aria-labelledby="gactions-title">
+      <div class="container">
+        <div class="gactions__grid">
+
+          <article class="gcard">
+            <div class="gcard__top">
+              <span class="gcard__icon is-navy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z" /><path d="M15 4v4h4M9 12h6M9 15h6M9 9h2" /></svg></span>
+              <span class="gcard__pill is-lav">Step-by-Step Guided Wizard</span>
+            </div>
+            <h2 id="gactions-title" class="gcard__title">Lodge New Public Grievance</h2>
+            <p class="gcard__sub">Register grievances concerning Central Ministries, Public Sector
+               Undertakings (PSUs), Nationalized Banks, or State Government administrative departments.</p>
+            <div class="gcard__chips">
+              <button class="gchip" type="button">Central Ministries</button>
+              <button class="gchip" type="button">State Administrations</button>
+              <button class="gchip" type="button">Banking &amp; Insurance</button>
+              <button class="gchip" type="button">Railways &amp; Telecom</button>
+            </div>
+            <div class="gcard__actions">
+              <button onclick="window.location.href='404.html'" class="gbtn gbtn--brand" type="button">
+                Register Grievance <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+              <button class="gbtn-square" type="button" aria-label="View draft grievances"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z" /><path d="M14 3.5v4h4" /></svg></button>
+            </div>
+          </article>
+
+          <article class="gcard">
+            <div class="gcard__top">
+              <span class="gcard__icon is-lav"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /><path d="M8 8h6M8 11h6M8 14h3.5" /></svg></span>
+              <span class="gcard__pill is-green">Live Status Tracker</span>
+            </div>
+            <h2 class="gcard__title">Track Grievance Status &amp; File Appeal</h2>
+            <p class="gcard__sub">Enter your Grievance Registration Number (e.g.,
+               <strong>D0RLD/E/2024/00492</strong>) to view official movement logs, Nodal Officer
+               contact, or ATR.</p>
+            <label class="gfield">
+              <input type="text" value="D0TEL/E/2024/08311" aria-label="Grievance Registration Number">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+            </label>
+            <div class="gfield-row">
+              <input type="tel" value="+91 ••••• ••892" aria-label="Registered mobile">
+              <input type="text" value="9842" aria-label="OTP">
+            </div>
+            <button onclick="window.location.href='404.html'" class="gbtn gbtn--navy" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" /><path d="M12 8v4l2.5 2.5" /><path d="m8 2 2 2M16 2l-2 2" /></svg> Fetch Live Tracking Status
+            </button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="lifecycle" aria-labelledby="lifecycle-title">
+      <div class="container">
+        <div class="lifecycle__card">
+
+          <div class="lifecycle__head">
+            <div>
+              <span class="lifecycle__eyebrow">Standard Operating Procedure</span>
+              <h2 id="lifecycle-title" class="lifecycle__title">Transparent Grievance Lifecycle &amp; Escalation Path</h2>
+            </div>
+            <span class="lifecycle__sla"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg> Mandatory SLA: 30 Working Days Resolution</span>
+          </div>
+
+          <div class="lifecycle__grid">
+            <article class="step-card">
+              <div class="step-card__top">
+                <span class="step-card__num">01</span>
+                <span class="step-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="4" /><path d="M3.5 20c.6-3 2.2-5 5.5-5 1.2 0 2.3.3 3.2.9" /><path d="m14 16 2 2 4-4" /></svg></span>
+              </div>
+              <h3 class="step-card__title">1. Lodged</h3>
+              <p class="step-card__text">Citizen submits details via portal or mobile app. Instant
+                 Unique Registration Number generated.</p>
+              <span class="step-card__day">Day 0 (Instant)</span>
+            </article>
+
+            <article class="step-card">
+              <div class="step-card__top">
+                <span class="step-card__num">02</span>
+                <span class="step-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" /><path d="m1 9 8 5.5L17 9" /><path d="M17 15h4M19 13l2 2-2 2" /></svg></span>
+              </div>
+              <h3 class="step-card__title">2. Forwarded</h3>
+              <p class="step-card__text">Automated DARPG triage maps petition to designated
+                 Ministry / Department Nodal Grievance Officer.</p>
+              <span class="step-card__day">Day 1 - 3</span>
+            </article>
+
+            <article class="step-card">
+              <div class="step-card__top">
+                <span class="step-card__num">03</span>
+                <span class="step-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2M9 4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1M9 4v1h6V4" /><path d="m9 13 2 2 4-4" /></svg></span>
+              </div>
+              <h3 class="step-card__title">3. Investigation</h3>
+              <p class="step-card__text">Field inquiries, departmental verification, and
+                 corrective policy or operational actions executed.</p>
+              <span class="step-card__day">Day 4 - 20</span>
+            </article>
+
+            <article class="step-card">
+              <div class="step-card__top">
+                <span class="step-card__num">04</span>
+                <span class="step-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2" /><path d="M8 3v4M16 3v4M3.5 9.5h17" /><path d="m9 15 2 2 4-4" /></svg></span>
+              </div>
+              <h3 class="step-card__title">4. ATR Issued</h3>
+              <p class="step-card__text">Formal Action Taken Report (ATR) with certified
+                 departmental speaking order uploaded for citizen.</p>
+              <span class="step-card__day">Day 21 - 30</span>
+            </article>
+
+            <article class="step-card is-accent">
+              <div class="step-card__top">
+                <span class="step-card__num">05</span>
+                <span class="step-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H8l-4 4V7a2 2 0 0 1 2-2Z" /><path d="M12 8v4M12 15h.01" /></svg></span>
+              </div>
+              <h3 class="step-card__title">5. Feedback &amp; Appeal</h3>
+              <p class="step-card__text">Citizen rates satisfaction. If unsatisfied, one-click
+                 escalation to Designated Appellate Authority (DAA).</p>
+              <span class="step-card__day">30 Days Appeal Window</span>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="tracker" aria-labelledby="tracker-title">
+      <div class="container">
+        <div class="tracker__card">
+
+          <div class="tracker__head">
+            <div class="tracker__head-left">
+              <span class="tracker__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z" /><path d="M14 3.5v4h4M9 12h6M9 15h6M9 9h2" /></svg></span>
+              <div>
+                <h2 id="tracker-title" class="tracker__title">Citizen Active Grievances Tracker</h2>
+                <p class="tracker__sub">Real-time status of submissions linked to authenticated
+                   MeriPehchaan / Aadhaar identity.</p>
+              </div>
+            </div>
+            <div class="tracker__head-actions">
+              <button class="tracker__pill" type="button" data-status-filter aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4" /></svg> All Statuses (4 Active)</button>
+              <button class="tracker__pill" type="button" data-export-csv><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 19h16" /></svg> Export CSV</button>
+            </div>
+          </div>
+
+          <div class="tracker__scroll">
+            <table class="tracker__table">
+              <thead>
+                <tr>
+                  <th>Registration Number</th>
+                  <th>Department / Authority</th>
+                  <th>Submission Date</th>
+                  <th>Current Status</th>
+                  <th>Nodal Officer</th>
+                  <th class="ta-right">Action Taken Report (ATR)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Registration Number">
+                    <span class="treg">MORLY/E/2024/09124</span>
+                    <span class="tmeta">Category: Refund / IRCTC Tatkal</span>
+                  </td>
+                  <td data-label="Department / Authority">
+                    <span class="tstrong">Ministry of Railways</span>
+                    <span class="tmeta">Northern Railway HQ, New Delhi</span>
+                  </td>
+                  <td data-label="Submission Date">
+                    <span class="tstrong">14 Oct 2024</span>
+                    <span class="tmeta">11 days elapsed</span>
+                  </td>
+                  <td data-label="Current Status"><span class="status is-amber"><i></i> Under Review</span></td>
+                  <td data-label="Nodal Officer" class="tnodal">
+                    <span class="tstrong">Shri R. K. Sharma, IRTS</span>
+                    <span class="tmeta">Director (PG-II) • 011-23386823</span>
+                  </td>
+                  <td data-label="Action Taken Report (ATR)" class="ta-right"><span class="tmeta">Pending Enquiry</span></td>
+                </tr>
+
+                <tr>
+                  <td data-label="Registration Number">
+                    <span class="treg">DPOST/E/2024/04812</span>
+                    <span class="tmeta">Category: Speed Post Transit Delay</span>
+                  </td>
+                  <td data-label="Department / Authority">
+                    <span class="tstrong">Department of Posts</span>
+                    <span class="tmeta">Dak Bhawan, Sansad Marg</span>
+                  </td>
+                  <td data-label="Submission Date">
+                    <span class="tstrong">18 Oct 2024</span>
+                    <span class="tmeta">7 days elapsed</span>
+                  </td>
+                  <td data-label="Current Status"><span class="status is-blue"><i></i> In-Progress</span></td>
+                  <td data-label="Nodal Officer" class="tnodal">
+                    <span class="tstrong">Ms. Ananya Roy, IPoS</span>
+                    <span class="tmeta">Assistant Director General (PG)</span>
+                  </td>
+                  <td data-label="Action Taken Report (ATR)" class="ta-right"><span class="tmeta">Interim Dispatch Sent</span></td>
+                </tr>
+
+                <tr>
+                  <td data-label="Registration Number">
+                    <span class="treg">CBDTE/E/2024/11094</span>
+                    <span class="tmeta">Category: Income Tax Refund AY 23-24</span>
+                  </td>
+                  <td data-label="Department / Authority">
+                    <span class="tstrong">Central Board of Direct Taxes</span>
+                    <span class="tmeta">CPC Bengaluru / O/o Pr. CCIT</span>
+                  </td>
+                  <td data-label="Submission Date">
+                    <span class="tstrong">28 Sep 2024</span>
+                    <span class="tmeta is-green">Resolved in 18 days</span>
+                  </td>
+                  <td data-label="Current Status"><span class="status is-green"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8" /></svg> Disposed with Order</span></td>
+                  <td data-label="Nodal Officer" class="tnodal">
+                    <span class="tstrong">Shri V. Sridhar, IRS</span>
+                    <span class="tmeta">Joint Commissioner (Grievance)</span>
+                  </td>
+                  <td data-label="Action Taken Report (ATR)" class="ta-right">
+                    <button onclick="window.location.href='404.html'" class="atr-btn is-amber" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 19h16" /></svg> Download ATR (PDF)</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Registration Number">
+                    <span class="treg">D0TEL/E/2024/08311</span>
+                    <span class="tmeta">Category: Optical Fiber Connectivity / BSNL</span>
+                  </td>
+                  <td data-label="Department / Authority">
+                    <span class="tstrong">Department of Telecommunications</span>
+                    <span class="tmeta">Sanchar Bhawan, 20 Ashoka Road</span>
+                  </td>
+                  <td data-label="Submission Date">
+                    <span class="tstrong">12 Sep 2024</span>
+                    <span class="tmeta">Closed on 02 Oct</span>
+                  </td>
+                  <td data-label="Current Status"><span class="status is-lav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z" /><path d="M14 3.5v4h4" /></svg> Closed / Order Issued</span></td>
+                  <td data-label="Nodal Officer" class="tnodal">
+                    <span class="tstrong">Shri P. C. Meena</span>
+                    <span class="tmeta">DDG (PG &amp; Quality of Service)</span>
+                  </td>
+                  <td data-label="Action Taken Report (ATR)" class="ta-right">
+                    <span class="atr-stack">
+                      <button onclick="window.location.href='404.html'" class="atr-btn is-navy" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z" /><path d="M14 3.5v4h4" /></svg> ATR Report</button>
+                      <button onclick="window.location.href='404.html'" class="atr-btn is-appeal" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 4.5 5 5-2 2-5-5 2-2Z" /><path d="m10.5 8.5 5 5-2 2-5-5 2-2Z" /><path d="m12.5 6.5 5 5" /><path d="M7 20h12M11 20v-3M9 14l2 3" /></svg> File Appeal</button>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tracker__foot">
+            <span class="tracker__foot-left">Showing 4 of 4 active registered grievances</span>
+            <span class="tracker__foot-right">
+              Authenticated Citizen Identity: Aadhaar Linked via DigiLocker
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m9 12 2 2 4-4" /></svg>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="legal" aria-labelledby="legal-title">
+      <div class="container">
+        <div class="legal__card">
+
+          <div class="legal__head">
+            <span class="legal__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 4.5 5 5-2 2-5-5 2-2Z" /><path d="m10.5 8.5 5 5-2 2-5-5 2-2Z" /><path d="m12.5 6.5 5 5" /><path d="M7 20h12M11 20v-3M9 14l2 3" /></svg></span>
+            <div>
+              <span class="legal__eyebrow">Statutory Guidance Note</span>
+              <h2 id="legal-title" class="legal__title">Matters Not Treated as Grievances on CPGRAMS</h2>
+            </div>
+          </div>
+
+          <p class="legal__intro">In accordance with Office Memorandum No. 1/1/2021-P&amp;PW(E) issued by
+             DARPG, Government of India, the following categories are strictly excluded from the
+             CPGRAMS mechanism. Please route such requests to their constitutionally designated
+             avenues:</p>
+
+          <div class="legal__grid">
+            <article class="legal-card">
+              <h3 class="legal-card__title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 4.5 5 5-2 2-5-5 2-2Z" /><path d="m10.5 8.5 5 5-2 2-5-5 2-2Z" /><path d="m12.5 6.5 5 5" /><path d="M7 20h12M11 20v-3M9 14l2 3" /></svg> Sub-Judge Matters</h3>
+              <p class="legal-card__text">Cases pending before Supreme Court, High Courts, District
+                 Courts, or Central Administrative Tribunals (CAT).</p>
+              <span class="legal-card__foot">Avenue: Judicial Registrar / Supreme Court of India</span>
+            </article>
+
+            <article class="legal-card">
+              <h3 class="legal-card__title is-navy"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" /></svg> RTI Act / Information</h3>
+              <p class="legal-card__text">Requests seeking documents, files, or information under the
+                 Right to Information Act, 2005.</p>
+              <a class="legal-card__link" href="#">Visit RTI Online Portal <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h5v5M20 4l-9 9M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5" /></svg></a>
+            </article>
+
+            <article class="legal-card">
+              <h3 class="legal-card__title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20S4 16.5 4 9.8A4.8 4.8 0 0 1 12 6.2a4.8 4.8 0 0 1 8 3.6C20 16.5 12 20 12 20Z" /><path d="M4 7V3M4 7l4-1.5" /></svg> Commercial / Consumer Claims</h3>
+              <p class="legal-card__text">Inter-personal civil disputes, private vendor contracts, or
+                 individual commercial consumer claims.</p>
+              <a class="legal-card__link" href="#">National Consumer Helpline (NCH 1915) <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h5v5M20 4l-9 9M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5" /></svg></a>
+            </article>
+          </div>
+
+          <p class="legal__note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M6 7.5l12 9M18 7.5l-12 9" /></svg>
+            For immediate threats to life or cyber incidents, dial 112 (National Emergency) or
+            1930 (National Cyber Crime Reporting).
+          </p>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <!-- TODO: replace logo SVG -->
+          <a class="footer__logo" href="index.html" aria-label="Stackly home">
+            <img src="assets/logo/logo-stackly.webp" alt="Stackly" width="170" height="36">
+          </a>
+          <p class="footer__about">JanSeva is an integrated single-window platform bringing Central, State, and District administrative utilities into a unified, authenticated, and citizen-first digital journey.</p>
+          <div class="footer__accr">
+            <span class="footer__accr-label">Accreditations:</span>
+            <span class="accr-badge">STQC Certified</span>
+            <span class="accr-badge">WCAG 2.2 AAA</span>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Citizen Lifecycle">
+          <h4>Citizen Lifecycle</h4>
+          <ul>
+            <li><a href="404.html">Birth &amp; Child Healthcare</a></li>
+            <li><a href="404.html">Education &amp; Skill Vouchers</a></li>
+            <li><a href="404.html">Employment &amp; Labor Welfare</a></li>
+            <li><a href="404.html">Housing &amp; Land Registry</a></li>
+            <li><a href="404.html">Retirement &amp; Social Pension</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="National Gateways">
+          <h4>National Gateways</h4>
+          <ul>
+            <li><a href="404.html">DigiLocker Ecosystem</a></li>
+            <li><a href="404.html">MyGov Citizen Engagement</a></li>
+            <li><a href="404.html">CPGRAMS Grievance Portal</a></li>
+            <li><a href="404.html">India.gov.in Directory</a></li>
+            <li><a href="404.html">Direct Benefit Transfer (DBT)</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="Governance and Legal">
+          <h4>Governance &amp; Legal</h4>
+          <ul>
+            <li><a href="404.html">RTI Online Portal</a></li>
+            <li><a href="404.html">Data Privacy Policy</a></li>
+            <li><a href="404.html">Terms of Service</a></li>
+            <li><a href="404.html">Hyperlinking Policy</a></li>
+            <li><a href="404.html">Helpdesk &amp; Escalation</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__strip">
+        <span>Emergency: 112</span><i></i>
+        <span>Cyber Helpline: 1930</span><i></i>
+        <span>Health: 1075</span><i></i>
+        <span>RTI Online</span><i></i>
+        <span class="is-strong">STQC Certified</span><i></i>
+        <span class="is-strong">WCAG 2.2 AAA Compliant</span><i></i>
+        <span>Terms of Service</span><i></i>
+        <span>Privacy Policy</span><i></i>
+        <span>Helpdesk</span>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__credit">Designed, developed and hosted by National Informatics Centre (NIC), Ministry of Electronics &amp; Information Technology, Government of India.</p>
+        <div class="footer__meta">
+          <span>Last Updated: 24 Oct 2024</span><i></i>
+          <span class="footer__safe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.7-7 9-4.2-1.3-7-4.7-7-9V6l7-2.5Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" /></svg>Cyber Safe Verified</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="accessibility-tools">
+    <button class="floating-tool" type="button" data-a11y-trigger aria-expanded="false" aria-controls="a11y-panel" aria-label="Open accessibility options">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2" /><path d="M5 9h14M12 9v10M8.5 20l3.5-6 3.5 6" /></svg>
+      <span>Accessibility</span>
+    </button>
+    <div class="a11y-panel" id="a11y-panel" hidden>
+      <strong>Accessibility options</strong>
+      <button type="button" data-a11y-action="contrast">Increase contrast</button>
+      <button type="button" data-a11y-action="text">Larger text</button>
+      <button type="button" data-a11y-action="reset">Reset view</button>
+    </div>
+  </div>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6" /></svg>
+  </button>
+
+  <script src="js/grievance.js" defer></script>
+</body>
+</html>

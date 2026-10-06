@@ -8057,3 +8057,76 @@ pre {
     gap: 6px;
   }
 }
+
+/* ===== HOMEPAGE RESPONSIVE FIXES (small + medium devices) ===== */
+@media (max-width: 640px) {
+  .hero__features,
+  .track__steps,
+  .life__grid,
+  .gov__stats,
+  .services__grid,
+  .dpi__grid,
+  .states__grid,
+  .help__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card internals must wrap instead of spilling outside the card */
+.service-card__top,
+.step__top,
+.gov__stat,
+.dpi-stat,
+.help__card-head,
+.state-card__top {
+  flex-wrap: wrap;
+}
+
+.service-card__meta {
+  grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+}
+
+.service-card__badge,
+.service-card__meta,
+.dpi-stat__value,
+.state-card__badge,
+.state-card__name,
+.help__card-title,
+.track__field,
+.track__preview {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.service-card__badge,
+.state-card__badge,
+.dpi-stat__value {
+  white-space: normal;
+  max-width: 100%;
+}
+
+/* Updates section must not overflow on medium screens */
+@media (max-width: 1024px) {
+  .updates__head {
+    align-items: stretch;
+  }
+
+  .updates__tabs {
+    max-width: 100%;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .updates__tabs::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ===== HOMEPAGE TAB STRIPS WRAP (small) ===== */
+@media (max-width: 640px) {
+  .services__tabs {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+}

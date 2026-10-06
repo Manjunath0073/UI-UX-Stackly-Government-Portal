@@ -2157,19 +2157,26 @@ html.fs-lg {
 }
 
 .ut-card__code {
+  flex: 1 1 auto;
+  min-width: 0;
   color: var(--ut-code);
   font-weight: 700;
   letter-spacing: .05em;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .ut-card__badge {
+  flex: 0 0 auto;
+  max-width: 100%;
   background: var(--ut-badge-bg);
   color: var(--ut-badge-ink);
   border-radius: 8px;
   padding: 6px 12px;
   font-weight: 700;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .ut-card__title {

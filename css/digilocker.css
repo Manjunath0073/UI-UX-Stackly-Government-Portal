@@ -2911,6 +2911,19 @@ html.fs-lg {
   .doc-card {
     padding: 18px;
   }
+
+  .doc-card__actions {
+    gap: 8px;
+  }
+
+  .btn-download {
+    white-space: nowrap;
+  }
+
+  .btn-doc-icon {
+    width: 44px;
+    min-height: 48px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3201,6 +3214,18 @@ html.fs-lg {
 
   .drive__drop {
     padding: 40px;
+  }
+
+  .file-row {
+    flex-wrap: wrap;
+  }
+
+  .file-row__info {
+    flex: 1 1 160px;
+  }
+
+  .file-row__actions {
+    margin-left: auto;
   }
 }
 

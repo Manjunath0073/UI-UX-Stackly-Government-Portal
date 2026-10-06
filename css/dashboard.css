@@ -1626,6 +1626,7 @@ html.fs-lg {
   align-items: center;
   gap: 22px;
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 .dprofile__divider {
@@ -1782,13 +1783,27 @@ html.fs-lg {
     align-items: flex-start;
   }
 
-  .dprofile__right {
-    width: 100%;
-    justify-content: flex-start;
+  .dprofile__main {
+    align-items: flex-start;
   }
 
-  .dprofile__divider {
+  .dprofile__right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dprofile__divider,
+  .dprofile__dot {
     display: none;
+  }
+
+  .dprofile__bell {
+    margin-left: auto;
+  }
+
+  .dprofile__settings {
+    flex: 1 1 100%;
+    justify-content: center;
   }
 }
 
@@ -1798,9 +1813,23 @@ html.fs-lg {
     height: 68px;
   }
 
-  .dprofile__settings {
+  .dprofile__main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .dprofile__info {
     width: 100%;
-    justify-content: center;
+  }
+
+  .dprofile__pill,
+  .dprofile__meta {
+    white-space: nowrap;
+  }
+
+  .dprofile__row2 {
+    gap: 10px 14px;
   }
 }
 
